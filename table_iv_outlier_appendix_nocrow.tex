@@ -1,0 +1,23 @@
+% table_iv_outlier_appendix_nocrow.tex --- Outcome construction and outlier robustness
+% (exact-date strict construction, Crow excluded).
+% include via:  \estwide{table_iv_outlier_appendix_nocrow.tex}{7}{c}
+% Each row reports the main 2SLS estimate (exact-date strict instruments, Crow excluded) after
+% rebuilding the sample under the indicated treatment of extreme lease income per trust acre. The
+% build excludes extreme observations rather than capping them (the outcome is trimmed, not
+% capped); the baseline trims the 1st and 99th percentiles. The final row additionally drops
+% leases below one trust acre. FE = reservation + lease-signing year; controls = lease term,
+% fee-simple share, log tract acreage. CRV1 standard errors in parentheses; WB p = wild-cluster
+% bootstrap (B = 99,999); AR = Anderson--Rubin 95\% set; effective F = Montiel Olea--Pflueger;
+% over-id p = Sargan. Income in 2010 dollars per trust acre. Causal instrumental-variable estimates.
+ & Coefficient & WB $p$ & AR 95\% CI & Effective $F$ & Over-id $p$ & $N$ & Clusters \\
+\midrule
+Baseline 1/99 trim & $-$0.2341 & 0.020 & [-0.415, -0.066] & 75.7 & 0.984 & 2,211 & 38 \\
+ & (0.0697) & & & & & & \\[0.3ex]
+No trimming of income per trust acre & $-$0.2265 & 0.016 & [-0.385, -0.065] & 77.0 & 0.949 & 2,284 & 38 \\
+ & (0.0645) & & & & & & \\[0.3ex]
+2/98 trim & $-$0.2041 & 0.024 & [-0.382, -0.045] & 76.8 & 0.975 & 2,157 & 37 \\
+ & (0.0676) & & & & & & \\[0.3ex]
+5/95 trim & $-$0.2113 & 0.011 & [-0.374, -0.062] & 84.8 & 0.615 & 1,998 & 37 \\
+ & (0.0633) & & & & & & \\[0.3ex]
+Baseline trim, trust acres $\geq$ 1 & $-$0.2341 & 0.020 & [-0.415, -0.066] & 75.7 & 0.984 & 2,211 & 38 \\
+ & (0.0697) & & & & & & \\[0.3ex]

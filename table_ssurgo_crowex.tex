@@ -1,0 +1,39 @@
+% table_ssurgo_crowex.tex --- SSURGO soil-quality balance and soil-controlled 2SLS, Crow-excluded
+% baseline with Crow-included comparison (exact-date strict construction).
+% include via:  \estwide{table_ssurgo_crowex.tex}{4}{c}
+% Panel A reports the partial correlation of each instrument with each z-scored SSURGO soil
+% measure, conditional on reservation and lease-signing year fixed effects and the baseline
+% controls. Panel B re-estimates the 2SLS effect of fractionation on log annual lease income per
+% trust acre with and without soil controls; the first-stage statistic there is the cluster-robust
+% joint Wald F (not the Montiel Olea--Pflueger effective F). The matched soil sample covers 2,184
+% leases on 37 reservations (Crow excluded) and 2,813 leases on 38 reservations (Crow included).
+% Soil measures: NCCPI = National Commodity Crop Productivity Index; rangeland productivity;
+% available water storage; and land capability class. CRV1 standard errors clustered by
+% reservation; WB p = wild-cluster bootstrap p-value. Income in 2010 dollars per trust acre.
+\multicolumn{5}{l}{\textbf{Panel A: balance of the instrument on the soil measure (partial correlation; WB $p$)}} \\
+ & \multicolumn{2}{c}{Crow excluded} & \multicolumn{2}{c}{Crow included} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & partial $r$ & WB $p$ & partial $r$ & WB $p$ \\
+\midrule
+\multicolumn{5}{l}{\emph{Earliest qualifying probate order}} \\
+\quad NCCPI & 0.0385 & 0.052 & 0.0139 & 0.600 \\
+\quad rangeland productivity & $-$0.0469 & 0.010 & $-$0.0459 & 0.005 \\
+\quad available water storage & $-$0.0119 & 0.581 & $-$0.0487 & 0.312 \\
+\quad land capability class & $-$0.0112 & 0.505 & 0.0116 & 0.696 \\
+\multicolumn{5}{l}{\emph{Latest qualifying probate order}} \\
+\quad NCCPI & $-$0.0345 & 0.045 & $-$0.0184 & 0.365 \\
+\quad rangeland productivity & 0.0191 & 0.121 & 0.0173 & 0.106 \\
+\quad available water storage & $-$0.0500 & 0.022 & $-$0.0128 & 0.796 \\
+\quad land capability class & 0.0558 & 0.003 & 0.0411 & 0.026 \\
+\midrule
+\multicolumn{5}{l}{\textbf{Panel B: 2SLS with soil controls}} \\
+ & \multicolumn{2}{c}{Crow excluded} & \multicolumn{2}{c}{Crow included} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & Coef (SE) & WB $p$ & Coef (SE) & WB $p$ \\
+\midrule
+No soil control & $-$0.2338 (0.0693) & 0.018 & $-$0.1820 (0.0677) & 0.022 \\
++ NCCPI & $-$0.1944 (0.0644) & 0.033 & $-$0.1634 (0.0574) & 0.016 \\
++ rangeland productivity & $-$0.2302 (0.0691) & 0.018 & $-$0.1809 (0.0653) & 0.017 \\
++ available water storage & $-$0.2105 (0.0666) & 0.026 & $-$0.1944 (0.0512) & 0.010 \\
++ land capability class & $-$0.1702 (0.0640) & 0.037 & $-$0.1499 (0.0516) & 0.014 \\
++ all four soil measures & $-$0.1400 (0.0609) & 0.061 & $-$0.1375 (0.0456) & 0.030 \\

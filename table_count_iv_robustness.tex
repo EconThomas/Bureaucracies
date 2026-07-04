@@ -1,0 +1,17 @@
+% table_count_iv_robustness.tex --- Count-Based IV Robustness (restacked, portrait-safe, 6 data columns)
+% include via:  \estwide{table_count_iv_robustness.tex}{6}{c}
+ & \multicolumn{3}{c}{Crow excluded ($G=38$)} & \multicolumn{3}{c}{Crow included ($G=39$)} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Ownership measure & Coef. & WB $p$ / AR & Eff. $F$ & Coef. & WB $p$ / AR & Eff. $F$ \\
+\midrule
+$\ln(\text{owners})$ & $-$0.0569 & 0.020 & 554.6 & $-$0.0404 & 0.079 & 752.0 \\
+ & (0.0177) & [-0.100, -0.015] & & (0.0191) & [-0.083, 0.003] & \\[0.3ex]
+$\ln(\text{effective owners})$ & $-$0.1290 & 0.021 & 205.6 & $-$0.0923 & 0.072 & 323.7 \\
+ & (0.0395) & [-0.229, -0.035] & & (0.0423) & [-0.192, 0.008] & \\[0.3ex]
+$1/(\text{owners}{+}1)$ & 0.9017 & 0.024 & 417.9 & 0.6742 & 0.062 & 549.7 \\
+ & (0.2713) & [0.246, 1.568] & & (0.2961) & [-0.060, 1.355] & \\[0.3ex]
+$1/\sqrt{\text{owners}{+}1}$ & 0.5201 & 0.022 & 564.3 & 0.3790 & 0.070 & 854.6 \\
+ & (0.1584) & [0.143, 0.909] & & (0.1721) & [-0.034, 0.771] & \\[0.3ex]
+\midrule
+Observations & \multicolumn{3}{c}{2,211} & \multicolumn{3}{c}{2,848} \\
+Reservations & \multicolumn{3}{c}{38} & \multicolumn{3}{c}{39} \\

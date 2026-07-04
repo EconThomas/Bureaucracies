@@ -1,0 +1,26 @@
+% tableB5short.tex --- Tribal ownership share and lease income per trust acre (multi-owner sample).
+% include via:  \estwide{tableB5short.tex}{6}{c}
+% Each column is an OLS regression of log annual lease income per trust acre on the multi-owner
+% sample of agricultural leases of allotted trust land, 2006--2010. Columns 1--3 enter the
+% tribal share of ownership alone; columns 4--6 add an indicator for the tribe being the largest
+% owner and its interaction with the tribal share. Lease controls are the lease term, resource-type
+% indicators (surface-resource-only leases omitted), and log tract acreage; the fee-simple share
+% enters where indicated. All columns include reservation and lease-signing year fixed effects.
+% Reservation-clustered SEs in parentheses; wild-cluster bootstrap p-values (B = 9,999) in square
+% brackets. These are descriptive associations, not causal estimates.
+\multicolumn{7}{l}{\emph{Panel B. Multi-owner sample}} \\
+ & (1) & (2) & (3) & (4) & (5) & (6) \\
+\midrule
+Tribal share of ownership & +0.049 & +0.058 & +0.101 & $-$0.015 & $-$0.004 & +0.054 \\
+ & (0.040)\,[0.252] & (0.040)\,[0.176] & (0.052)\,[0.094] & (0.036)\,[0.680] & (0.037)\,[0.907] & (0.048)\,[0.284] \\[0.3ex]
+Tribe is the largest owner &  &  &  & +0.046 & +0.046 & +0.075 \\
+ &  &  &  & (0.055)\,[0.410] & (0.053)\,[0.394] & (0.054)\,[0.164] \\[0.3ex]
+Tribal share $\times$ tribe-is-largest &  &  &  & +0.037 & +0.034 & $-$0.026 \\
+ &  &  &  & (0.102)\,[0.720] & (0.101)\,[0.738] & (0.104)\,[0.808] \\[0.3ex]
+\midrule
+Lease-signing year fixed effects & Yes & Yes & Yes & Yes & Yes & Yes \\
+Reservation fixed effects & Yes & Yes & Yes & Yes & Yes & Yes \\
+Fee-simple share & No & Yes & Yes & No & Yes & Yes \\
+Lease controls & No & No & Yes & No & No & Yes \\
+Reservation clusters & 45 & 45 & 45 & 45 & 45 & 45 \\
+Observations & 8,662 & 8,662 & 8,662 & 8,662 & 8,662 & 8,662 \\

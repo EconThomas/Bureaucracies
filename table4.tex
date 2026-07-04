@@ -1,0 +1,25 @@
+% table4.tex (Table 6) --- Tribe-is-largest-owner association with lease income per trust acre.
+% include via:  \estwide{table4.tex}{4}{c}
+% Each column is an ordinary least-squares regression of log annual lease income per trust
+% acre on an indicator for the tribe being the largest owner of the tract, on agricultural
+% leases of allotted trust land, 2006--2010. Columns 1--3 use the full constructed sample;
+% column 4 uses the multi-owner sample (tracts with at least two owners). Lease controls are
+% the lease term in years, resource-type indicators (surface-resource-only leases omitted,
+% with separate indicators for leases conveying both surface and subsurface resources), and
+% log tract acreage; the fee-simple share enters where indicated. All columns include
+% reservation fixed effects and lease-signing year fixed effects. Reservation-clustered
+% standard errors in parentheses; wild-cluster bootstrap p-values (Rademacher, null imposed,
+% B = 9,999) reported in the table. These are descriptive associations, not causal estimates.
+ & (1) & (2) & (3) & (4) \\
+\midrule
+Tribe is the largest owner & +0.062 & +0.063 & +0.088 & +0.082 \\
+ & (0.027) & (0.026) & (0.030) & (0.029) \\
+Wild-cluster bootstrap $p$ & 0.027 & 0.021 & 0.010 & 0.014 \\[0.3ex]
+\midrule
+Lease-signing year fixed effects & Yes & Yes & Yes & Yes \\
+Reservation fixed effects & Yes & Yes & Yes & Yes \\
+Fee-simple share & No & Yes & Yes & Yes \\
+Lease controls & No & No & Yes & Yes \\
+Sample & Full & Full & Full & Multi-owner \\
+Reservation clusters & 46 & 46 & 46 & 45 \\
+Observations & 9,403 & 9,403 & 9,403 & 8,662 \\

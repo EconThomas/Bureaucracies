@@ -1,0 +1,30 @@
+% table_instrument_timing.tex --- Instrument timing and the main IV estimate (Crow excluded).
+% include via:  \estwide{table_instrument_timing.tex}{5}{c}  (5 columns; see width note below)
+% The sample excludes the Crow Reservation. The outcome is log annual lease income per trust
+% acre, and the endogenous regressor is one over the square root of the largest owner's share.
+% Columns differ only in how the probate-order instruments are timed relative to the lease:
+% (1) exact-date strict --- the earliest and latest qualifying probate orders approved no later
+% than the lease effective date (the main specification); (2) year-level strict --- probate-order
+% years no later than the lease year; (3) latest probate order through 2010 --- the earliest
+% qualifying probate order together with the latest probate order recorded on the tract through
+% 2010, the end of the ownership extract (this latest value is not a pre-lease quantity);
+% (4) earliest-only --- the earliest qualifying probate order alone (just identified); and
+% (5) strict prior-year --- orders approved before the lease year (an over-strict bracket that
+% discards same-year orders). All specifications include reservation fixed effects, lease-signing
+% year fixed effects, the lease term, the fee-simple share, and log tract acreage. Standard errors
+% cluster by reservation. Wild-cluster bootstrap p-values use reservation-level Rademacher weights
+% (null imposed, B = 99,999). Anderson--Rubin intervals are weak-instrument-robust 95\% confidence
+% sets; the over-identification test (Sargan) is reported for the over-identified columns but does
+% not establish instrument validity. Income is in 2010 dollars per trust acre.
+ & \specialcell{Exact-date\\strict (main)} & \specialcell{Year-level\\strict} & \specialcell{Latest probate\\order through 2010} & Earliest-only & \specialcell{Strict\\prior-year} \\
+\midrule
+$1/\sqrt{s_{\max}}$ & $-$0.2341 & $-$0.2297 & $-$0.2269 & $-$0.2217 & $-$0.2135 \\
+ & (0.0697) & (0.0610) & (0.0579) & (0.1244) & (0.0668) \\[0.3ex]
+Wild-cluster bootstrap $p$ & 0.020 & 0.007 & 0.004 & 0.041 & 0.032 \\
+Anderson--Rubin 95\% CI & [-0.415, -0.066] & [-0.391, -0.085] & [-0.381, -0.093] & [-0.505, -0.003] & [-0.383, -0.052] \\
+AR $p$-value at $\beta=0$ & 0.003 & $<$0.001 & $<$0.001 & 0.047 & 0.006 \\
+Over-identification $p$-value & 0.984 & 0.939 & 0.961 & -- & 0.875 \\
+Effective $F$ & 75.7 & 73.9 & 73.6 & 77.5 & 80.8 \\
+\midrule
+Observations & 2,211 & 2,234 & 2,234 & 2,234 & 2,211 \\
+Reservations & 38 & 38 & 38 & 38 & 38 \\

@@ -1,0 +1,23 @@
+% play_tribe4.tex (Appendix) --- Theory-implied and linear forms of the tribal-share association.
+% include via:  \estwide{play_tribe4.tex}{6}{c}
+% OLS on tracts with positive tribal ownership, agricultural leases of allotted trust land,
+% 2006--2010. The outcome is lease income per trust acre in levels (2010 dollars; columns 1--3)
+% or in logs (columns 4--6). The theory-implied regressor is one over the square root of the
+% tribal share. Lease controls are the lease term, resource-type indicators (surface-resource-only
+% leases omitted), and log tract acreage. All columns include reservation and lease-signing year
+% fixed effects. Reservation-clustered SEs in parentheses; wild-cluster bootstrap p-values
+% (B = 9,999) in square brackets. Descriptive associations, not causal estimates.
+ & (1) & (2) & (3) & (4) & (5) & (6) \\
+\midrule
+Outcome & Levels & Levels & Levels & Log & Log & Log \\
+\addlinespace[0.3ex]
+$1/\sqrt{\text{tribal share}}$ & $-$0.026 & $-$0.020 &  & $-$0.001 & $-$0.001 &  \\
+ & (0.031)\,[0.445] & (0.033)\,[0.576] &  & (0.002)\,[0.666] & (0.002)\,[0.813] &  \\[0.3ex]
+Tribal share of ownership &  &  & +2.773 &  &  & +0.126 \\
+ &  &  & (1.198)\,[0.046] &  &  & (0.051)\,[0.038] \\[0.3ex]
+\midrule
+Lease-signing year fixed effects & Yes & Yes & Yes & Yes & Yes & Yes \\
+Reservation fixed effects & Yes & Yes & Yes & Yes & Yes & Yes \\
+Lease controls & No & Yes & Yes & No & Yes & Yes \\
+Reservation clusters & 40 & 40 & 40 & 40 & 40 & 40 \\
+Observations & 3,643 & 3,643 & 3,643 & 3,643 & 3,643 & 3,643 \\

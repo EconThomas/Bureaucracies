@@ -1,0 +1,20 @@
+% play_tribe_dum.tex (Appendix) --- Presence of tribal ownership and lease income per trust acre.
+% include via:  \estwide{play_tribe_dum.tex}{3}{c}
+% OLS of log annual lease income per trust acre on an indicator for the tribe holding any
+% ownership of the tract, full constructed sample, agricultural leases of allotted trust land,
+% 2006--2010. Lease controls are the lease term, resource-type indicators (surface-resource-only
+% leases omitted), and log tract acreage; the fee-simple share enters where indicated. All
+% columns include reservation and lease-signing year fixed effects. Reservation-clustered SEs in
+% parentheses; wild-cluster bootstrap p-values (B = 9,999) in square brackets. Descriptive
+% associations, not causal estimates.
+ & (1) & (2) & (3) \\
+\midrule
+Tribe holds any ownership & $-$0.020 & $-$0.021 & +0.011 \\
+ & (0.026)\,[0.449] & (0.026)\,[0.425] & (0.030)\,[0.732] \\[0.3ex]
+\midrule
+Lease-signing year fixed effects & Yes & Yes & Yes \\
+Reservation fixed effects & Yes & Yes & Yes \\
+Fee-simple share & No & Yes & Yes \\
+Lease controls & No & No & Yes \\
+Reservation clusters & 46 & 46 & 46 \\
+Observations & 9,403 & 9,403 & 9,403 \\

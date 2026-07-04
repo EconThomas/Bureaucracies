@@ -1,0 +1,25 @@
+% table_frac_compact.tex --- Descriptive ownership fractionation and lease income per trust acre.
+% include via:  \estwide{table_frac_compact.tex}{5}{c}
+% Each column reports one ordinary least-squares regression of log annual lease income per trust
+% acre on a single ownership measure on the multi-owner sample of agricultural leases of allotted
+% trust land, 2006--2010 (n = 8,662 leases on 45 reservations). All columns include reservation
+% fixed effects, lease-signing year fixed effects, and the baseline lease controls (lease term in
+% years, resource-type indicators with surface-resource-only leases as the omitted category, log
+% tract acreage, and the fee-simple share). Standard errors in parentheses are clustered at the
+% reservation level; the wild-cluster bootstrap p-value (Rademacher, null imposed, B = 9,999)
+% accounts for the small number of clusters. Income is in 2010 dollars per trust acre per year.
+% These are descriptive associations, not causal estimates.
+ & (1) & (2) & (3) & (4) & (5) \\
+\midrule
+Ownership measure & $1/\sqrt{s_{\max}}$ & $s_{\max}$ & Owners$\,/\,1{,}000$ & HHI $\in[0,1]$ & $s_{\max,2}$ \\
+\addlinespace
+Coefficient & $-$0.0334 & 0.1191 & $-$0.3389 & 0.1301 & 0.0988 \\
+ & (0.0104) & (0.0372) & (0.1790) & (0.0455) & (0.0277) \\
+Wild-cluster bootstrap $p$ & 0.014 & 0.013 & 0.100 & 0.018 & 0.004 \\
+\midrule
+Outcome mean & 2.653 & 2.653 & 2.653 & 2.653 & 2.653 \\
+Observations & 8,662 & 8,662 & 8,662 & 8,662 & 8,662 \\
+Reservation clusters & 45 & 45 & 45 & 45 & 45 \\
+Lease controls & Yes & Yes & Yes & Yes & Yes \\
+Reservation fixed effects & Yes & Yes & Yes & Yes & Yes \\
+Lease-signing year fixed effects & Yes & Yes & Yes & Yes & Yes \\

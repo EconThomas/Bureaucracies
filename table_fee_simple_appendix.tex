@@ -1,0 +1,27 @@
+% table_fee_simple_appendix.tex --- Fee-simple share and lease income per trust acre.
+% include via:  \estwide{table_fee_simple_appendix.tex}{4}{c}
+% Each column reports an ordinary least-squares regression of log annual lease income per trust
+% acre on the fee-simple share of the tract's ownership. Columns 1--3 use the full sample of
+% agricultural leases of allotted trust land, 2006--2010 (9,403 leases on 46 reservations after
+% dropping reservations with a single lease); column 4 restricts to the multi-owner sample (8,662
+% leases on 45 reservations). All columns include reservation fixed effects and lease-signing year
+% fixed effects. Column 2 adds the baseline lease controls (lease term in years, resource-type
+% indicators with surface-resource-only leases omitted, and log tract acreage); column 3 adds the
+% main ownership concentration measure, one over the square root of the largest owner's share;
+% column 4 repeats column 3 on the multi-owner sample. Standard errors in parentheses are clustered
+% by reservation; the wild-cluster bootstrap p-value (Rademacher, null imposed, B = 9,999) accounts
+% for the small number of clusters. These are descriptive associations and do not identify the
+% causal effect of fee-simple ownership. Income is in 2010 dollars per trust acre per year.
+ & (1) & (2) & (3) & (4) \\
+\midrule
+Fee-simple share & 0.2638 & 0.3035 & 0.3033 & 0.2728 \\
+ & (0.1253) & (0.1149) & (0.1139) & (0.1070) \\
+Wild-cluster bootstrap $p$ & 0.111 & 0.060 & 0.059 & 0.061 \\
+\midrule
+Ownership concentration ($1/\sqrt{s_{\max}}$) & No & No & Yes & Yes \\
+Lease controls & No & Yes & Yes & Yes \\
+Reservation fixed effects & Yes & Yes & Yes & Yes \\
+Lease-signing year fixed effects & Yes & Yes & Yes & Yes \\
+Sample & Full & Full & Full & Multi-owner \\
+Observations & 9,403 & 9,403 & 9,403 & 8,662 \\
+Reservation clusters & 46 & 46 & 46 & 45 \\
