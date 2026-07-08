@@ -1,23 +1,21 @@
 % table1.tex (Table 1) --- Summary statistics.
-% include via:  \estwide{table1.tex}{9}{c}
-% Means, standard deviations, and counts on three samples: the full constructed sample (all
-% agricultural leases of allotted trust land, 2006--2010), the multi-owner sample (tracts with at
-% least two owners), and the IV-eligible, Crow-included sample. The IV-eligible, Crow-included
-% sample consists of multi-owner, surface-resource-only, agency-administered leases whose qualifying
-% probate orders fall on or after 1938. The preferred IV sample further excludes the Crow
-% Reservation. The probate-timing instruments are defined only on the IV-eligible sample. Income is
-% in 2010 dollars per trust acre.
- & \multicolumn{3}{c}{Full} & \multicolumn{3}{c}{Multi-owner} & \multicolumn{3}{c}{\shortstack{IV-eligible\\Crow included}} \\
-\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
- & Mean & SD & N & Mean & SD & N & Mean & SD & N \\
+% Means and standard deviations for three samples. Sample sizes are reported in the table note.
+ & \multicolumn{2}{c}{Full} & \multicolumn{2}{c}{Multi-owner} & \multicolumn{2}{c}{\shortstack{IV-eligible\\Crow included}} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+ & Mean & SD & Mean & SD & Mean & SD \\
 \midrule
-Lease income/trust acre (\$/yr, $\times$1) & 21.666 & 22.099 & 9,409 & 21.692 & 21.988 & 8,662 & 17.572 & 18.991 & 2,871 \\
-Log of lease income/trust acre & 2.647 & 0.965 & 9,409 & 2.653 & 0.960 & 8,662 & 2.409 & 0.979 & 2,871 \\
-Largest owner's share $s_{\max}$ & 0.398 & 0.274 & 9,409 & 0.347 & 0.219 & 8,662 & 0.374 & 0.250 & 2,871 \\
-$1/\sqrt{s_{\max}}$ & 1.902 & 0.692 & 9,409 & 1.979 & 0.666 & 8,662 & 1.960 & 0.724 & 2,871 \\
-Number of owners on the tract & 34.390 & 58.192 & 9,409 & 37.210 & 59.738 & 8,662 & 44.995 & 67.138 & 2,871 \\
-Tract HHI ($\in [0,1]$, $=\sum_i s_i^2$) & 0.301 & 0.282 & 9,409 & 0.241 & 0.202 & 8,662 & 0.263 & 0.236 & 2,871 \\
-Fee-simple share of ownership & 0.034 & 0.106 & 9,409 & 0.037 & 0.110 & 8,662 & 0.038 & 0.109 & 2,871 \\
-Tract size (acres) & 136.482 & 126.636 & 9,409 & 138.182 & 127.031 & 8,662 & 166.776 & 161.566 & 2,871 \\
-Earliest qualifying probate order (year) &  &  &  &  &  &  & 1969.846 & 17.256 & 2,871 \\
-Latest qualifying probate order (year) &  &  &  &  &  &  & 2003.361 & 10.096 & 2,871 \\
+\multicolumn{7}{l}{\textit{Panel A. Lease, ownership, and tract variables}} \\
+\addlinespace[0.25em]
+Lease income/trust acre (\$/yr, $\times$1) & 21.666 & 22.099 & 21.692 & 21.988 & 17.572 & 18.991 \\
+Log of lease income/trust acre & 2.647 & 0.965 & 2.653 & 0.960 & 2.409 & 0.979 \\
+Largest owner's share $s_{\max}$ & 0.398 & 0.274 & 0.347 & 0.219 & 0.374 & 0.250 \\
+$1/\sqrt{s_{\max}}$ & 1.902 & 0.692 & 1.979 & 0.666 & 1.960 & 0.724 \\
+Number of owners on the tract & 34.390 & 58.192 & 37.210 & 59.738 & 44.995 & 67.138 \\
+Tract HHI ($\in [0,1]$, $=\sum_i s_i^2$) & 0.301 & 0.282 & 0.241 & 0.202 & 0.263 & 0.236 \\
+Fee-simple share of ownership & 0.034 & 0.106 & 0.037 & 0.110 & 0.038 & 0.109 \\
+Tract size (acres) & 136.482 & 126.636 & 138.182 & 127.031 & 166.776 & 161.566 \\
+\addlinespace[0.45em]
+\multicolumn{7}{l}{\textit{Panel B. Probate-timing instruments}} \\
+\addlinespace[0.25em]
+Earliest qualifying probate order (year) &  &  &  &  & 1969.846 & 17.256 \\
+Latest qualifying probate order (year) &  &  &  &  & 2003.361 & 10.096 \\
