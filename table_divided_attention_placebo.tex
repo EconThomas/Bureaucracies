@@ -1,0 +1,32 @@
+\begin{table}[H]
+\caption{Owners' Holdings on Other Tracts and Lease Income per Trust Acre}
+\label{tab:divided_attention}
+\footnotesize
+\setlength\extrarowheight{-1pt}
+\setlength{\tabcolsep}{4pt}
+\centering
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{6.4cm}cccc}
+\toprule
+ & (1) & (2) & (3) & (4) \\
+\midrule
+Holdings elsewhere, all individual owners & $0.0232$ &  & $0.0248$ &  \\
+ & (0.0139) &  & (0.0139) &  \\
+ & [0.151] &  & [0.133] &  \\
+Holdings elsewhere, largest owner &  & $0.0381$ &  & $0.0371$ \\
+ &  & (0.0085) &  & (0.0090) \\
+ &  & [0.002] &  & [0.002] \\
+Holdings elsewhere, other owners &  & $-0.0168$ &  & $-0.0147$ \\
+ &  & (0.0110) &  & (0.0116) \\
+ &  & [0.149] &  & [0.233] \\
+\midrule
+$1/\sqrt{s_{\max}}$ and owner count & Yes & Yes & Yes & Yes \\
+$\ln(\text{HHI})$ and top-two share & No & No & Yes & Yes \\
+Reservation and lease-signing year fixed effects & Yes & Yes & Yes & Yes \\
+Lease controls & Yes & Yes & Yes & Yes \\
+Observations & 7,484 & 7,484 & 7,484 & 7,484 \\
+Reservation clusters & 44 & 44 & 44 & 44 \\
+\bottomrule
+\end{tabular*}
+\parbox{1\textwidth}{\begin{spacing}{0.8}\small\noindent Notes: Each column reports an ordinary least-squares regression of log lease income per trust acre. The sample is the multi-owner sample restricted to tracts whose largest owner is an individual, so that the largest owner's holdings elsewhere are defined. For each individual owner, holdings elsewhere are the log of one plus the number of other agricultural tracts the owner holds on the same reservation. The tract-level measures are the stake-weighted mean over all individual owners, the value for the largest owner, and the stake-weighted mean over the other owners; each is standardized to mean zero and standard deviation one. All columns hold within-tract fractionation fixed and include reservation fixed effects, lease-signing year fixed effects, lease term, resource-type indicators, log tract acreage, and fee-simple share. Standard errors clustered by reservation appear in parentheses, and wild-cluster bootstrap $p$-values (Rademacher weights, null imposed, 9,999 replications) appear in brackets. Holdings elsewhere are not randomly assigned, so the estimates are descriptive. On the 2,240 leases with soil data, adding the four soil productivity and condition measures shrinks the coefficient on the largest owner's holdings by about 30 percent, so we do not interpret its positive sign.\end{spacing}}
+\normalsize
+\end{table}
