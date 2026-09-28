@@ -1,6 +1,8 @@
 % table_iv_robust_crowex_short.tex (Table 5) --- IV robustness battery, two panels
 % (Panel A Crow-excluded baseline, Panel B Crow-included comparison).
-% include via: \estwide{table_iv_robust_crowex_short.tex}{3}{c}
+% include via: \estwide{table_iv_robust_crowex_short.tex}{4}{c}
+% Round 2 (2026-09-27, Olga C45): N column added from the micropatch values CSV (ex_n / in_n)
+% by analysis_2026/revision_round2_20260927/code/add_n_table5.py; all other cells verified unchanged.
 % Each row reports the 2SLS estimate of the effect of ownership fractionation on log annual
 % lease income per trust acre under the indicated change, for agency-administered, multi-owner,
 % surface-resource-only agricultural leases of allotted trust land, 2006--2010. The endogenous
@@ -14,26 +16,26 @@
 % each estimate. Panel A (Crow excluded) covers 38 reservations and Panel B (Crow included) 39.
 % Income is in 2010 dollars per trust acre. These are causal (instrumental-variable)
 % estimates under the stated exclusion restriction.
- & Coefficient (SE) & WB $p$ & AR 95\% \\
+ & Coefficient (SE) & WB $p$ & AR 95\% & $N$ \\
 \midrule
-\multicolumn{4}{l}{\textit{Panel A. Crow excluded}} \\
+\multicolumn{5}{l}{\textit{Panel A. Crow excluded}} \\
 \addlinespace[0.25em]
-Baseline, qualifying probate orders $\geq$ 1938 & $-$0.234 (0.070) & 0.020 & [-0.415, -0.066] \\
-No probate-date eligibility cutoff & $-$0.235 (0.062) & 0.012 & [-0.383, -0.085] \\
-Including probate modifications & $-$0.228 (0.056) & 0.005 & [-0.361, -0.095] \\
-Reservation-by-allotment-decade fixed effects & $-$0.191 (0.095) & 0.140 & -- \\
-Top five owners' cumulative share & 0.440 (0.136) & 0.020 & [0.121, 0.785] \\
-Ownership Herfindahl index & 0.547 (0.177) & 0.034 & [0.151, 1.017] \\
-Direct-payment leases retained & $-$0.232 (0.060) & 0.010 & [-0.384, -0.092] \\
-No trimming & $-$0.227 (0.065) & 0.016 & [-0.385, -0.065] \\
+Baseline, qualifying probate orders $\geq$ 1938 & $-$0.234 (0.070) & 0.020 & [-0.415, -0.066] & 2,211 \\
+No probate-date eligibility cutoff & $-$0.235 (0.062) & 0.012 & [-0.383, -0.085] & 2,341 \\
+Including probate modifications & $-$0.228 (0.056) & 0.005 & [-0.361, -0.095] & 2,246 \\
+Reservation-by-allotment-decade fixed effects & $-$0.191 (0.095) & 0.140 & -- & 2,162 \\
+Top five owners' cumulative share & 0.440 (0.136) & 0.020 & [0.121, 0.785] & 2,211 \\
+Ownership Herfindahl index & 0.547 (0.177) & 0.034 & [0.151, 1.017] & 2,211 \\
+Direct-payment leases retained & $-$0.232 (0.060) & 0.010 & [-0.384, -0.092] & 2,394 \\
+No trimming & $-$0.227 (0.065) & 0.016 & [-0.385, -0.065] & 2,284 \\
 \addlinespace[0.45em]
-\multicolumn{4}{l}{\textit{Panel B. Crow included}} \\
+\multicolumn{5}{l}{\textit{Panel B. Crow included}} \\
 \addlinespace[0.25em]
-Baseline, qualifying probate orders $\geq$ 1938 & $-$0.176 (0.073) & 0.048 & [-0.344, 0.016] \\
-No probate-date eligibility cutoff & $-$0.157 (0.081) & 0.130 & [-0.339, 0.019] \\
-Including probate modifications & $-$0.181 (0.060) & 0.008 & [-0.315, -0.026] \\
-Reservation-by-allotment-decade fixed effects & $-$0.159 (0.081) & 0.102 & [-0.187, 0.038] \\
-Top five owners' cumulative share & 0.315 (0.143) & 0.070 & [-0.028, 0.639] \\
-Ownership Herfindahl index & 0.406 (0.188) & 0.073 & [-0.032, 0.890] \\
-Direct-payment leases retained & $-$0.170 (0.071) & 0.050 & [-0.333, 0.021] \\
-No trimming & $-$0.169 (0.076) & 0.065 & [-0.339, 0.039] \\
+Baseline, qualifying probate orders $\geq$ 1938 & $-$0.176 (0.073) & 0.048 & [-0.344, 0.016] & 2,848 \\
+No probate-date eligibility cutoff & $-$0.157 (0.081) & 0.130 & [-0.339, 0.019] & 3,006 \\
+Including probate modifications & $-$0.181 (0.060) & 0.008 & [-0.315, -0.026] & 2,887 \\
+Reservation-by-allotment-decade fixed effects & $-$0.159 (0.081) & 0.102 & [-0.187, 0.038] & 2,799 \\
+Top five owners' cumulative share & 0.315 (0.143) & 0.070 & [-0.028, 0.639] & 2,848 \\
+Ownership Herfindahl index & 0.406 (0.188) & 0.073 & [-0.032, 0.890] & 2,848 \\
+Direct-payment leases retained & $-$0.170 (0.071) & 0.050 & [-0.333, 0.021] & 3,091 \\
+No trimming & $-$0.169 (0.076) & 0.065 & [-0.339, 0.039] & 2,923 \\
