@@ -1,0 +1,52 @@
+% fig_iv_dag.tex --- two-panel directed acyclic graph organizing the IV assumptions.
+% Requires tikz with libraries arrows.meta and positioning (loaded in the preamble).
+\centering
+\footnotesize
+\textbf{Panel A. Intended causal paths}\\[0.5em]
+\begin{tikzpicture}[>=Latex, node distance=7mm and 12mm,
+  every node/.style={draw, rounded corners, align=center, inner sep=3pt, font=\scriptsize}]
+  \node (pt)  {Probate-order\\timing};
+  \node (fr)  [right=of pt]  {Ownership\\fractionation};
+  \node (mon) [right=of fr]  {Owner\\monitoring};
+  \node (bia) [right=of mon] {BIA effort and\\lease administration};
+  \node (inc) [right=of bia] {Lease income\\per trust acre};
+  \node (inv) [below=9mm of mon] {Accumulated\\investment};
+  \draw[->] (pt)  -- (fr);
+  \draw[->] (fr)  -- (mon);
+  \draw[->] (mon) -- (bia);
+  \draw[->] (bia) -- (inc);
+  \draw[->] (fr)  to[out=-60,in=180] (inv);
+  \draw[->] (inv) to[out=0,in=-120] (inc);
+\end{tikzpicture}
+
+\vspace{1.4em}
+\textbf{Panel B. Threats and alternative channels}\\[0.5em]
+\begin{tikzpicture}[>=Latex,
+  every node/.style={draw, rounded corners, align=center, inner sep=3pt, font=\scriptsize, fill=white}]
+  \node (t1) at (0,3.0) {Family resources\\and mortality};
+  \node (t2) at (0,2.0) {Land endowments};
+  \node (t3) at (0,1.0) {Administrative\\capacity};
+  \node (t4) at (0,0.0) {Prior fractionation\\and number at risk};
+  \node (op) at (4.4,2.2) {Observed probate-\\order timing};
+  \node (inc) at (9.0,1.6) {Lease income\\per trust acre};
+  \node (inv) at (4.4,0.0) {Accumulated\\investment};
+  % Foreground: threat-to-observed-probate-timing arrows.
+  \draw[->,dashed] (t1) -- (op);
+  \draw[->,dashed] (t2) -- (op);
+  \draw[->,dashed] (t3) -- (op);
+  \draw[->,dashed] (t4) -- (op);
+  % Background: the four common-cause-to-income paths, drawn beneath the nodes so the
+  % white node fill masks them. Family resources = highest arc; land endowments passes
+  % above the observed-probate node; administrative capacity passes below it; prior
+  % fractionation = lowest arc.
+  \begin{scope}[on background layer]
+    \draw[->,dashed] (t1) to[out=35,in=100] (4.4,3.85) to[out=-20,in=112] (inc);
+    \draw[->,dashed] (t2) to[out=22,in=178] (4.4,2.95) to[out=-2,in=126] (inc);
+    \draw[->,dashed] (t3) to[out=-18,in=182] (4.4,1.5) to[out=-2,in=205] (inc);
+    \draw[->,dashed] (t4) to[out=-30,in=205] (4.4,-0.8) to[out=25,in=250] (inc);
+  \end{scope}
+  % Foreground (drawn after the background scope): direct observed-probate-to-income
+  % path and the solid accumulated-investment-to-income path.
+  \draw[->,dashed] (op) to[out=0,in=140] (inc);
+  \draw[->] (inv) to[out=0,in=-90] (inc);
+\end{tikzpicture}

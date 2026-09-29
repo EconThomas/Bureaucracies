@@ -1,0 +1,29 @@
+\begin{table}[H]
+\caption{Ownership-Snapshot Validation}
+\label{tab:ownership_snapshot_validation}
+\footnotesize
+\setlength\extrarowheight{-1pt}
+\setlength{\tabcolsep}{3pt}
+\noindent\textit{Panel A. Measurement stability, September 2009 vs.\ April 2010 (preferred sample)}\par\smallskip
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{7cm}c}
+\toprule Statistic & Value \\ \midrule
+Preferred-sample linkage to September 2009 & 99.95\% \\
+Correlation of $1/\sqrt{s_{\max}}$ & 0.9938 \\
+Correlation of largest-owner share & 0.9979 \\
+Correlation of ownership HHI & 0.9986 \\
+Correlation of owner count & 0.9996 \\
+Largest owner unchanged & 94.66\% \\
+Mean absolute change in $1/\sqrt{s_{\max}}$ & 0.0068 \\
+Median absolute change in $1/\sqrt{s_{\max}}$ & 0 \\
+Median change in owner count & 0 \\
+\bottomrule \end{tabular*}
+\vspace{0.6em}
+\noindent\textit{Panel B. Common-sample IV comparison ($N=1{,}899$, $G=34$)}\par\smallskip
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{2.6cm}cccccc}
+\toprule \shortstack[l]{Ownership\\measure} & \shortstack{2SLS coef.\\(SE)} & \shortstack{WB\\$p$} & \shortstack{AR 95\%\\CI} & \shortstack{CLR 95\%\\CI} & \shortstack{Eff.\\$F$} & \shortstack{40--20\\(\%)} \\ \midrule
+September 2009 & $-0.1999$ (0.0749) & 0.033 & $[-0.388,-0.025]$ & $[-0.365,-0.042]$ & 68.7 & $-12.27$ \\
+April 2010 & $-0.1992$ (0.0750) & 0.033 & $[-0.390,-0.024]$ & $[-0.364,-0.041]$ & 67.6 & $-12.23$ \\
+\bottomrule \end{tabular*}
+\parbox{1\textwidth}{\begin{spacing}{0.8}\small\noindent Notes: Panel A reports aggregate stability of the ownership measures between the September 28, 2009 snapshot and the April 2010 analytic snapshot across preferred-sample tracts. Panel B reestimates the preferred IV on the identical sample of 1,899 preferred-design leases effective on or before September 28, 2009, measuring ownership in each snapshot. The reduced forms are identical by construction on the common sample. The absolute coefficient difference is 0.00062285. No formal coefficient-difference test was conducted. The table is measurement validation and does not promote the 2009 measure. Standard errors cluster by reservation. Wild-cluster bootstrap $p$-values use 99,999 replications. Anderson--Rubin and conditional likelihood ratio sets are weak-instrument-robust 95 percent confidence sets.\end{spacing}}
+\normalsize
+\end{table}

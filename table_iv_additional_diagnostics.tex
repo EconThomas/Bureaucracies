@@ -1,0 +1,32 @@
+\begin{table}[H]
+\caption{Additional IV Diagnostics}
+\label{tab:iv_additional_diagnostics}
+\footnotesize
+\setlength\extrarowheight{-1pt}
+\setlength{\tabcolsep}{3pt}
+\centering
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{3.6cm}ccccccc}
+\toprule
+ & \shortstack{2SLS coef.\\(SE)} & \shortstack{WB\\$p$} & \shortstack{AR 95\%\\CI} & \shortstack{CLR 95\%\\CI} & \shortstack{Eff.\\$F$} & $N$ & $G$ \\
+\midrule
+\multicolumn{8}{l}{\textit{Panel A. Lag-restricted probate timing (lag-instrument specification)}} \\
+Orders $\geq 3$ years before lease & $-0.2177$ (0.0727) & 0.009 & $[-0.418,-0.058]$ & $[-0.374,-0.068]$ & 100.2 & 2,160 & 38 \\
+Orders $\geq 5$ years before lease & $-0.2010$ (0.0716) & 0.029 & $[-0.396,-0.041]$ & $[-0.357,-0.051]$ & 128.3 & 2,133 & 38 \\
+Orders $\geq 10$ years before lease & $-0.1744$ (0.0529) & 0.004 & $[-0.290,-0.053]$ & $[-0.335,-0.021]$ & 116.8 & 2,055 & 37 \\
+\addlinespace[0.4em]
+\multicolumn{8}{l}{\textit{Panel B. Finer-geography fixed effects (matched samples)}} \\
+\shortstack[l]{Reservation $+$ year\\(sample A)} & $-0.2226$ (0.0705) & 0.026 & $[-0.404,-0.052]$ & $[-0.382,-0.070]$ & 71.1 & 2,191 & 35 \\
+\shortstack[l]{Reservation $\times$ signing\\year} & $-0.2455$ (0.0628) & 0.009 & $[-0.410,-0.099]$ & $[-0.402,-0.097]$ & 78.1 & 2,191 & 35 \\
+\shortstack[l]{Reservation $+$ year\\(sample B)} & $-0.2292$ (0.0693) & 0.026 & $[-0.408,-0.060]$ & $[-0.392,-0.074]$ & 73.6 & 2,093 & 34 \\
+\shortstack[l]{Reservation $+$ county $\times$\\signing year} & $-0.2724$ (0.0751) & 0.014 & $[-0.442,-0.107]$ & $[-0.432,-0.122]$ & 63.6 & 2,093 & 34 \\
+\addlinespace[0.4em]
+\multicolumn{8}{l}{\textit{Panel C. Signing period and record completeness (exact-date, Crow-excluded)}} \\
+Early leases, 2006--2008 & $-0.3524$ (0.0921) & 0.006 & $[-0.590,-0.132]$ & $[-0.554,-0.170]$ & 55.6 & 1,406 & 34 \\
+Late leases, 2009--2010 & $-0.0073$ (0.1007) & 0.943 & $[-0.243,0.246]$ & $[-0.272,0.269]$ & 43.0 & 800 & 28 \\
+\shortstack[l]{Lower record\\completeness} & $-0.2936$ (0.0628) & 0.008 & $[-0.454,-0.164]$ & $[-0.489,-0.112]$ & 53.8 & 1,602 & 21 \\
+\shortstack[l]{Higher record\\completeness} & $-0.1409$ (0.1257) & 0.315 & $[-0.492,0.067]$ & $[-0.420,0.115]$ & 22.4 & 609 & 17 \\
+\bottomrule
+\end{tabular*}
+\parbox{1\textwidth}{\begin{spacing}{0.8}\small\noindent Notes: The outcome is log annual lease income per trust acre, and the endogenous variable is $1/\sqrt{s_{\max}}$. All rows include lease term, fee-simple share, and log tract acreage. Panels A and C include reservation and lease-signing-year fixed effects. Panel B reports matched comparisons, with the fixed-effect structure stated in each row. Standard errors cluster by reservation. Wild-cluster bootstrap $p$-values use WRE-N with 99,999 replications. Anderson--Rubin and conditional likelihood ratio sets are weak-instrument-robust 95 percent confidence sets. Panel A reports the lag-instrument specification on each common lag-eligible sample. Each row requires both qualifying probate orders to be at least the stated number of years before the lease effective date and uses the otherwise preferred specification. The implied 40-to-20 declines are 13.29, 12.33, and 10.79 percent. Panel B reports matched additive and stronger-fixed-effect rows on common samples. County is parsed from Public Land Survey System geography and is not an exact tract boundary. Panel C reports diagnostic subgroups, not separate identification designs. The completeness split uses the pre-specified median of 0.9462.\end{spacing}}
+\normalsize
+\end{table}

@@ -1,0 +1,36 @@
+\begin{table}[H]
+\caption{Land Characteristics and IV Sensitivity}
+\label{tab:land_characteristics_sensitivity}
+\footnotesize
+\setlength\extrarowheight{-1pt}
+\setlength{\tabcolsep}{3pt}
+\noindent\textit{Panel A. Common-sample IV sensitivity ($N=2{,}168$, $G=36$)}\par\smallskip
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{3.6cm}cccccc}
+\toprule Specification & \shortstack{2SLS coef.\\(SE)} & \shortstack{WB\\$p$} & \shortstack{AR 95\%\\CI} & \shortstack{CLR 95\%\\CI} & \shortstack{Eff.\\$F$} & \shortstack{40--20\\(\%)} \\ \midrule
+No added land controls & $-0.2327$ (0.0704) & 0.021 & $[-0.4143,-0.0625]$ & $[-0.3922,-0.0809]$ & 75.6 & $-14.14$ \\
+$+$ terrain and texture (4) & $-0.2246$ (0.0629) & 0.009 & $[-0.3616,-0.0764]$ & $[-0.3778,-0.0791]$ & 77.6 & $-13.68$ \\
+\shortstack[l]{$+$ soil productivity\\and condition (4)} & $-0.1411$ (0.0615) & 0.063 & $[-0.2898,0.0150]$ & $[-0.2858,-0.0003]$ & 77.0 & $-8.83$ \\
+\bottomrule \end{tabular*}
+\vspace{0.6em}
+\noindent\textit{Panel B. Instrument balance on terrain and texture}\par\smallskip
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{4.5cm}cccc}
+\toprule & \multicolumn{2}{c}{Earliest order} & \multicolumn{2}{c}{Latest order} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5} Control & \shortstack{Partial\\$r$} & \shortstack{WB\\$p$} & \shortstack{Partial\\$r$} & \shortstack{WB\\$p$} \\ \midrule
+Slope gradient & $0.0320$ & 0.358 & $0.0271$ & 0.220 \\
+Dominant-component elevation & $0.0269$ & 0.344 & $-0.0108$ & 0.677 \\
+Surface sand & $0.0472$ & 0.045 & $-0.0343$ & 0.187 \\
+Surface clay & $-0.0823$ & $<0.001$ & $0.0674$ & $<0.001$ \\
+\bottomrule \end{tabular*}
+\vspace{0.6em}
+\noindent\textit{Panel C. Instrument balance on soil productivity and condition measures}\par\smallskip
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{4.5cm}cccc}
+\toprule & \multicolumn{2}{c}{Earliest order} & \multicolumn{2}{c}{Latest order} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5} Measure & \shortstack{Partial\\$r$} & \shortstack{WB\\$p$} & \shortstack{Partial\\$r$} & \shortstack{WB\\$p$} \\ \midrule
+NCCPI & $0.0385$ & 0.052 & $-0.0345$ & 0.045 \\
+Rangeland productivity & $-0.0469$ & 0.010 & $0.0191$ & 0.121 \\
+Available water storage & $-0.0119$ & 0.581 & $-0.0500$ & 0.022 \\
+\shortstack[l]{Nonirrigated land\\capability class} & $-0.0112$ & 0.505 & $0.0558$ & 0.003 \\
+\bottomrule \end{tabular*}
+\parbox{1\textwidth}{\begin{spacing}{0.8}\small\noindent Notes: The terrain-and-texture battery comprises slope gradient, dominant-component elevation, surface sand, and surface clay. The soil battery comprises NCCPI, normal-year rangeland productivity, available water storage, and nonirrigated land capability class. All land measures are constructed by area-weighted aggregation of SSURGO map units to the tract using acreage weights on sampled points within each parcel. They are standardized on the common estimation sample of 2,168 leases across 36 reservations. Panel A adds each battery to the preferred specification. The two batteries are never combined. Panels B and C report partial correlations of each standardized control with each probate instrument, conditional on reservation and lease-signing-year fixed effects and the lease controls. Standard errors cluster by reservation. Wild-cluster bootstrap inference uses WRE-N with 99,999 replications. The terrain-and-texture battery is a targeted test of basic, plausibly predetermined endowments. The soil battery is a sensitivity exercise that can reflect productive capacity, accumulated management, or investment.\end{spacing}}
+\normalsize
+\end{table}
