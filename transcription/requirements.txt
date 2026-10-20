@@ -1,0 +1,5 @@
+# Fast on a normal laptop CPU, handles German+English and translation to English.
+faster-whisper>=1.0
+
+# Reference implementation (fallback if faster-whisper is unavailable).
+# openai-whisper>=20231117
