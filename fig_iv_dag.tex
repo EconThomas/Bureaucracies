@@ -17,6 +17,7 @@
   \draw[->] (bia) -- (inc);
   \draw[->] (fr)  to[out=-60,in=180] (inv);
   \draw[->] (inv) to[out=0,in=-120] (inc);
+  \draw[->] (fr.north) to[out=40,in=140] node[draw=none, above, inner sep=1pt] {administrative cost} (bia.north);
 \end{tikzpicture}
 
 \vspace{1.4em}

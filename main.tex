@@ -130,6 +130,7 @@
 \newcommand{\monthyear}{\ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi\ \number\year}
 \date{\monthyear}
 
+\setlength{\emergencystretch}{1em}
 \begin{document}
 \maketitle
 
@@ -176,7 +177,7 @@ The main instrumental-variables estimate shows that ownership fractionation lowe
 
 Additional evidence is consistent with the monitoring interpretation. The co-owners are dispersed principals who share the return from overseeing the BIA. Least-squares estimates show higher lease income when ownership is more concentrated, and the descriptive association for direct payment is consistent with greater owner involvement. Owners' holdings on other agricultural tracts are not associated with lower income, which points to free-riding within the tract rather than attention divided across tracts. Coordination at the majority threshold for consent does not explain the effect either. Where a single owner holds the majority interest required to grant a lease alone, neither lease income nor the share of tracts under lease rises. Because the data do not record monitoring itself, the IV estimate is the total effect of fractionation. That total effect can also include lower accumulated investment, because each co-owner would capture only a share of the return to improving the land, and less effort by the BIA on tracts that are costlier to administer because they have more owners.
 
-To scale the estimates, we use the model to compare fractionated ownership with a benchmark in which the same tract is monitored as if the ownership public-good problem were absent. Applying the preferred IV design to lease income measured in dollars gives an implied income gap of 9.3 to 12.9 percent, or \$264 to \$367 per lease-year, depending on whether the gap is evaluated at the mean largest-owner share or averaged across leases. Translating the preferred log estimate into dollars gives a larger range, 10.3 to 14.6 percent, or \$291 to \$413 per lease-year. Because these translations require choices about the dollar outcome and the evaluation point, we use the 40-to-20-share effect, 8.7 percent, as the main causal magnitude. We also report a simpler model calibration based on a dollar regression without controls or fixed effects. That calibration implies a smaller gap of 3.0 percent of lease income, or about \$85 per lease-year, which we treat as a lower benchmark.
+To scale the estimates, we use the model to compare fractionated ownership with a benchmark in which the same tract is monitored as if the ownership public-good problem were absent. Applying the preferred IV design to lease income measured in dollars gives an implied income gap of 9.3 to 12.9 percent, or \$264 to \$367 per lease-year, depending on whether the gap is evaluated at the mean largest-owner share or averaged across leases. Translating the preferred log estimate into dollars gives a larger range, 10.3 to 14.6 percent, or \$291 to \$413 per lease-year. Because these translations require choices about the dollar outcome and the evaluation point, we use the 40-to-20-share effect, 8.7 percent, as the main causal magnitude. We also report a simpler model calibration based on a dollar regression without controls or fixed effects. That calibration implies a smaller gap of 3.0 percent of lease income, or \$85 per lease-year, which we treat as a lower benchmark.
 
 The paper contributes to the study of bureaucracy by showing that the distribution of stakes among an agency's beneficiaries affects the output the agency secures for them. Existing work studies how Congress, the President, and agency objectives shape bureaucratic behavior \citep{Fiorina1977, KiewietMcCubbins1991, Weingast1984, Moe1985, WestCooper1989, Niskanen1971, Dixit2002, GailmardPatty2012}. Other work studies street-level discretion, intrinsic motivation, and biased or over-demanding clients \citep{Lipsky2010, BesleyGhatak2005, Prendergast2003, Prendergast2007, ForandUjhelyiTing2022}. In much of this work, client interactions are private, because clients monitor to obtain services or benefits for themselves. We study a different multiprincipal agency problem. A bureaucracy produces one output for a group of beneficiaries, and monitoring by any one beneficiary raises the return to all. The public-good problem among dispersed principals can therefore shape the output of a shared agent even within one administrative regime.
 
@@ -197,7 +198,7 @@ We assume that the public and private goods are perfect substitutes. Public-good
 
 We solve a one-shot, simultaneous-move contribution game under complete information. The model has two standard implications. With equal stakes and identical costs, the symmetric equilibrium pins down total monitoring and therefore the relationship between group size and output. With unequal stakes, the beneficiary with the highest marginal value of the public good contributes monitoring, up to ties, while the others free-ride \citep{Olson1965, BergstromBlumeVarian1986}. We now derive functional relationships that map these implications to beneficiary stakes. In the empirical setting, these stakes are ownership shares.
 
-Let bureaucratic effort be $e(M)=M/(\gamma+M)$. This function is concave on $[0, \infty)$, ranges from zero to one, and makes $\gamma$ the parameter governing the responsiveness of effort to monitoring. A larger $\gamma$ means that monitoring translates into effort more slowly. We adopt this form because it is parsimonious, delivers closed-form equilibrium expressions, and has the boundary behavior the setting requires: zero effort at zero monitoring, and effort approaching one as monitoring grows without bound. Any increasing, strictly concave effort function with the same boundary conditions yields the same qualitative comparative statics. The specific form pins down the functional relationships we take to the data, including the $1/\sqrt{s_{\max}}$ measure. Let $R_l$ denote the maximum attainable output, determined by factors outside bureaucratic effort. For a police department, for example, solved crimes are bounded by criminal activity. In the leasing setting below, attainable rent is bounded by the tract's agricultural value and the local lease market. Realized output is
+Let bureaucratic effort be $e(M)=M/(\gamma+M)$. This function is concave on $[0, \infty)$, ranges from zero to one, and makes $\gamma$ the parameter governing the responsiveness of effort to monitoring. A larger $\gamma$ means that monitoring translates into effort more slowly. We adopt this form because it is parsimonious, delivers closed-form equilibrium expressions, and has the boundary behavior the setting requires. Effort is zero at zero monitoring and approaches one as monitoring grows without bound. Any increasing, strictly concave effort function with the same boundary conditions yields the same qualitative comparative statics. The specific form pins down the functional relationships we take to the data, including the $1/\sqrt{s_{\max}}$ measure. Let $R_l$ denote the maximum attainable output, determined by factors outside bureaucratic effort. For a police department, for example, solved crimes are bounded by criminal activity. In the leasing setting below, attainable rent is bounded by the tract's agricultural value and the local lease market. Realized output is
 \begin{equation} \label{(1)}
     R(M, R_l) = \frac{M}{\gamma + M}R_l.
 \end{equation}
@@ -209,7 +210,7 @@ Consider equal shares and identical monitoring costs, and normalize the unit mon
 \[
     \Pi = R - M = \frac{M}{\gamma + M} R_l - M,
 \]
-taking the bureaucratic production function, the unit monitoring cost, and the ceiling $R_l$ as given. We call the resulting level constrained efficient: efficient because it maximizes total surplus, and constrained because the only lever is monitoring, not the agency's technology or the ceiling $R_l$. The first-order condition $R_l\gamma/(\gamma + M)^2 = 1$ gives
+taking the bureaucratic production function, the unit monitoring cost, and the ceiling $R_l$ as given. We call the resulting level constrained efficient. That level is efficient because it maximizes total surplus, and constrained because the only lever is monitoring, not the agency's technology or the ceiling $R_l$. The first-order condition $R_l\gamma/(\gamma + M)^2 = 1$ gives
 \begin{equation} \label{(2)}
     M^* = \sqrt{R_l \gamma} - \gamma.
 \end{equation}
@@ -299,7 +300,7 @@ The model can also accommodate beneficiaries who differ in monitoring costs. App
 
 \subsection{Allotment, trust status, and fractionation} \label{History}
 
-Allotted trust land matters for this paper because federal law separated beneficial ownership from the ordinary rights to sell, mortgage, or partition land. The General Allotment Act of 1887, commonly called the Dawes Act, authorized the federal government to survey reservation land and issue individual allotments to American Indians. The statutory schedule assigned 160 acres to each head of family, 80 acres to each single adult and orphan child, and 40 acres to other minors, with additional acreage where land was useful only for grazing. After allotments were made, land remaining within a reservation could be declared surplus and opened to non-Indian settlement. Allotment was an assimilation policy that sought to replace tribal landholding with individual farming and individual title. It also transferred large amounts of land out of Indian ownership. Indian landholdings fell from roughly 138 million acres before allotment to roughly 48 million acres by 1934 \citep{Carlson1981,Otis2014,McDonnell1991,DippelFryeLeonard2025}.\footnote{General Allotment Act of 1887, ch. 119, 24 Stat. 388, \S\S 1, 5. The Bureau of Indian Affairs describes over 90 million acres as passing out of Indian ownership between the Dawes Act and 1934 \citep{BIAIndianLandConsolidationHistory}.} The legal structure created by allotment continues to shape modern Indian land tenure \citep{Royster1995,Shoemaker2020}.
+Allotted trust land matters for this paper because federal law separated beneficial ownership from the ordinary rights to sell, mortgage, or partition land. The General Allotment Act of 1887, commonly called the Dawes Act, authorized the federal government to survey reservation land and issue individual allotments to American Indians. The statutory schedule assigned 160 acres to each head of family, 80 acres to each single adult and orphan child, and 40 acres to other minors, with additional acreage where land was useful only for grazing. After allotments were made, land remaining within a reservation could be declared surplus and opened to non-Indian settlement. Allotment was an assimilation policy that sought to replace tribal landholding with individual farming and individual title. It also transferred large amounts of land out of Indian ownership. Indian landholdings fell from 138 million acres before allotment to 48 million acres by 1934 \citep{Carlson1981,Otis2014,McDonnell1991,DippelFryeLeonard2025}.\footnote{General Allotment Act of 1887, ch. 119, 24 Stat. 388, \S\S 1, 5. The Bureau of Indian Affairs describes over 90 million acres as passing out of Indian ownership between the Dawes Act and 1934 \citep{BIAIndianLandConsolidationHistory}.} The legal structure created by allotment continues to shape modern Indian land tenure \citep{Royster1995,Shoemaker2020}.
 
 Most allotments did not convey unrestricted fee-simple title at the outset. Under section 5 of the Dawes Act, the United States held allotted land in trust for the allottee or the allottee's heirs. The allottee held beneficial ownership, including the right to use the land and receive income from it, but did not hold the full bundle of ordinary private property rights. Trust interests could not be sold, encumbered, mortgaged, or taxed without federal action. The Burke Act of 1906 added an early-exit mechanism. If the Secretary of the Interior judged an allottee competent and capable of managing his or her affairs, the Secretary could issue a fee-simple patent. After a fee patent, the land became taxable and could be sold or encumbered without the same federal restrictions.\footnote{Burke Act of 1906, ch. 2348, 34 Stat. 182.}
 
@@ -375,7 +376,7 @@ The model motivates both the form of $F_{ij}$ and the sign of $\beta$. The prima
 
 Equation~\eqref{(20)} is descriptive. Ownership structure is the product of more than a century of inheritance. Tracts that became heavily fractionated may differ in unobserved land productivity, location within the reservation, original allottee characteristics, or family history. The resulting bias in least squares can run either way. If poor land left families poorer and with fewer surviving heirs, less productive tracts would be less fractionated, and least squares would understate the income loss from fractionation. If instead families on poor land moved away and had large families, or valuable land was consolidated, less productive tracts would be more fractionated, and least squares would overstate the loss. The instrumental-variables design addresses this bias with residual variation in probate timing. Its validity rests on the conditions below and on their tests, not on the direction of the least-squares bias.
 
-The IV design uses probate timing. Fractionation accumulates when an owner dies and a probate order divides the owner's undivided ownership interest among heirs. We instrument $F_{ij}$ with the earliest and latest qualifying probate orders on the tract, denoted $Z_{ij}=(\underline{P}_{ij},\overline{P}_{ij})$. A probate order qualifies if it was approved no later than the lease effective date, the consistently recorded date tied to the beginning of the lease term.\footnote{TAAMS does not record a separate signing date for each lease, so the lease-signing year is the year of the effective date.} The first stage is
+The IV design uses probate timing. Fractionation accumulates when an owner dies and a probate order divides the owner's undivided ownership interest among heirs. We instrument $F_{ij}$ with the earliest and latest qualifying probate orders on the tract, denoted $Z_{ij}=(\underline{P}_{ij},\overline{P}_{ij})$. A probate order qualifies if it was approved no later than the lease effective date, the consistently recorded date tied to the beginning of the lease term.\footnote{TAAMS does not record a separate signing date for each lease, so the lease-signing year is the year of the effective date.} Figure~\ref{fig:instrument_schematic} plots the probate orders of three stylized tracts from allotment to a lease in 2008 and marks the two instruments on each. An older earliest order leaves more time for later divisions, and a more recent latest order adds heirs who are still in the ownership record when the lease begins. The first stage is
 \begin{equation} \label{(21)}
    F_{ij} = Z_{ij}'\pi + X_{ijt}'\rho + \mu_j + \delta_t + \nu_{ijt}.
 \end{equation}
@@ -412,7 +413,7 @@ Fractionation is the cumulative record of inheritance. Allotment initially assig
 
 The instruments are relevant because earlier and more extensive inheritance histories produce more fractionated ownership. The identifying variation has two components: when owners died and when the agency processed the resulting estates. The evidence in this section has four roles. The first-stage and reduced-form results document the empirical links from probate timing to fractionation and lease income. The main IV table reports the estimate under the maintained IV assumptions. The timing, finer-geography, first-probate-decade, land-characteristic, and record-completeness exercises probe specific threats to those assumptions, and sensitivity bounds show how large a violation would have to be to overturn the estimate. Alternative ownership measures and leave-one-reservation-out checks assess functional-form robustness and influence.
 
-Table~\ref{tab:iv_firststage} shows that the first stage is strong in the preferred Crow-excluded sample. Regressing the main fractionation measure on the two probate-timing instruments yields an effective $F$-statistic of 93.4 and a first-stage partial $R^2$ of 0.082. The signs have the expected interpretation. A later earliest qualifying probate order predicts less fractionation, with a coefficient of $-0.0052$ and a standard error of 0.0007. A later latest qualifying probate order predicts more fractionation, with a coefficient of 0.0154 and a standard error of 0.0014. The reduced-form coefficients move lease income in the corresponding direction. A later earliest order predicts higher lease income, with a coefficient of 0.0012 and a standard error of 0.0006. A later latest order predicts lower lease income, with a coefficient of $-0.0016$ and a standard error of 0.0009.
+Table~\ref{tab:iv_firststage} shows that the first stage is strong in the preferred Crow-excluded sample. Regressing the main fractionation measure on the two probate-timing instruments yields an effective $F$-statistic of 93.4 and a first-stage partial $R^2$ of 0.082. The signs have the expected interpretation. A later earliest qualifying probate order predicts less fractionation, with a coefficient of $-0.0052$ and a standard error of 0.0007. A later latest qualifying probate order predicts more fractionation, with a coefficient of 0.0154 and a standard error of 0.0014. The same first stage can be written in the span of the probate history, which is the latest order year minus the earliest, and in the latest order year. Both coefficients are then positive, 0.0052 with a standard error of 0.0007 on the span and 0.0101 with a standard error of 0.0011 on the latest year. Tracts with a longer probate history and tracts with a more recent latest order are both more fractionated. Because the span and the latest year are a linear transformation of the two order years, the IV estimate and the first-stage diagnostics do not change. Appendix Figure~\ref{fig:fs_by_instrument} plots each instrument's first-stage relationship net of the other instrument, the fixed effects, and the controls. The reduced-form coefficients move lease income in the corresponding direction. A later earliest order predicts higher lease income, with a coefficient of 0.0012 and a standard error of 0.0006. A later latest order predicts lower lease income, with a coefficient of $-0.0016$ and a standard error of 0.0009.
 
 Figure~\ref{fig:iv_fs_rf} shows the same first-stage and reduced-form relationships using a standardized probate-timing index. Panel A plots the first stage. A one-standard-deviation increase in the index raises residualized $1/\sqrt{s_{\max}}$ by 0.172, with a standard error of 0.016. Panel B plots the reduced form. The same index lowers residualized log lease income per trust acre by 0.0239, with a standard error of 0.0091. The ratio of these two slopes is the two-stage least-squares coefficient for the index specification. Figure~\ref{fig:iv_fs_rf} therefore shows why the IV estimate is negative.
 
@@ -532,11 +533,18 @@ The estimates apply to agency-pay, multi-owner agricultural leases of allotted t
 
 \begin{figure}[H]
 \centering
+\caption{\label{fig:instrument_schematic} How the Probate-Timing Instruments Shift Fractionation}
+\includegraphics[width=0.98\textwidth]{fig_instrument_schematic.pdf}
+\caption*{\small\noindent Notes: A stylized illustration with hypothetical owner counts, not data. Each line is a tract allotted to one owner and leased in 2008. Each circle is a probate order, the number above it is the number of owners after that order, and filled circles mark the earliest and latest qualifying orders, the two instruments.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
 \caption{\label{fig:iv_dag} Intended IV Path and Main Threats}
 \input{fig_iv_dag.tex}
 
 \vspace{0.5em}
-\parbox{1\textwidth}{\begin{spacing}{0.8}\small\noindent Notes: Panel A shows the first stage and the two channels from fractionation to lease income, owner monitoring and accumulated investment. In Panel B, dashed arrows from common determinants to probate timing and income threaten conditional independence, and the dashed arrow from probate timing to income would violate the no-direct-effect condition. Accumulated investment is an alternative channel, not a threat. The diagram is not evidence that the assumptions hold.\end{spacing}}
+\parbox{1\textwidth}{\begin{spacing}{0.8}\small\noindent Notes: Panel A shows the first stage and three channels from fractionation to lease income, through owner monitoring, BIA effort on tracts that are costlier to administer, and accumulated investment. In Panel B, dashed arrows from common determinants threaten conditional independence, and the dashed arrow from probate timing to income would violate the no-direct-effect condition. Accumulated investment is an alternative channel, not a threat. The diagram is not evidence that the assumptions hold.\end{spacing}}
 \end{figure}
 
 \begin{table}[H]
@@ -688,7 +696,7 @@ The estimates apply to agency-pay, multi-owner agricultural leases of allotted t
 \end{tabular*}
 \endgroup
 \parbox{1\textwidth}{\begin{spacing}{0.8}
-\small\noindent Notes: The table reports the model calibration from the levels regression of lease income per trust acre on $1/\sqrt{s_{\max}}$ in equation~\eqref{(24)}, estimated without controls or fixed effects. The Crow-excluded column uses the broad calibration sample of 8,387 leases, which matches the preferred institutional population but is not the preferred IV sample. The Crow-included column is reported for comparison. Dollars are 2010 dollars per trust acre unless otherwise stated.
+\small\noindent Notes: Model calibration from the levels regression of lease income per trust acre on $1/\sqrt{s_{\max}}$ in equation~\eqref{(24)}, estimated without controls or fixed effects. The Crow-excluded column uses the broad calibration sample of 8,387 leases, which matches the preferred institutional population but is not the preferred IV sample. The Crow-included column is reported for comparison. Dollars are 2010 dollars per trust acre unless otherwise stated.
 \end{spacing}}
 \end{table}
 
@@ -779,7 +787,7 @@ The extension preserves the public-goods logic of the main model. With equal cos
 
 \subsection*{Distributions of Key Variables}
 
-Figures \ref{figA1}, \ref{figA2}, \ref{figA3}, and \ref{figA4} visualize some of the variables described in Table \ref{tab:table1}. Figure \ref{figA1} shows the frequency distribution of lease income. Figure \ref{figA2} shows the distribution of the number of owners per tract. Figure \ref{figA3} shows the frequency distribution of the largest ownership share for each tract. This distribution shows 25, 33, and 50 percent peaks, about 800 observations in these three categories. For about 25 percent of all tracts, the largest ownership share is less than 20 percent. The histogram in Figure \ref{figA4} shows the subsample of tracts in which the tribe shares ownership. Of these tracts, 1,000 have less than a ten percent tribal ownership share. The tribal ownership shares above ten percent have a roughly uniform distribution, except when tribes have 50 percent ownership in the land.
+Figures~\ref{figA1} to~\ref{figA4} show the distributions of four variables in the full sample of Table~\ref{tab:table1}, 9,409 leases. Figure~\ref{figA1} shows lease income per trust acre, and Figure~\ref{figA2} shows the number of owners per tract. Figure~\ref{figA3} shows the largest ownership share. The largest share is exactly one quarter on 698 leases, one third on 745, and one half on 835, which produces the peaks at these values. For 2,481 leases, or 26.4 percent, the largest ownership share is below 20 percent. Figure~\ref{figA4} shows the tribal ownership share on the 3,646 leases of tracts with a positive tribal share. On 964 of these leases, the tribal share is below 10 percent. Above 10 percent, the tribal shares spread across the whole range, with a peak at one half.
 \vspace{2mm}
 
 \begin{figure}[H]
@@ -789,7 +797,7 @@ Figures \ref{figA1}, \ref{figA2}, \ref{figA3}, and \ref{figA4} visualize some of
 \begin{minipage}{0.70\linewidth}
 \begin{flushleft}
 \vspace{0.25em}
-\caption*{\small\noindent Notes: The unit of observation is an agricultural lease signed between 2006 and 2010. The width of the bins is \$15. $N=9,409$.}
+\caption*{\small\noindent Notes: Agricultural leases signed between 2006 and 2010 in the full sample of Table~\ref{tab:table1}, 9,409 leases. Lease income per trust acre is in 2010 dollars, and the bins are \$15 wide.}
 \end{flushleft}
 \end{minipage}
 \end{figure}
@@ -802,7 +810,7 @@ Figures \ref{figA1}, \ref{figA2}, \ref{figA3}, and \ref{figA4} visualize some of
 \begin{minipage}{0.70\linewidth}
 \begin{flushleft}
 \vspace{0.25em}
-\caption*{\small\noindent Notes: The unit of observation is an agricultural lease signed between 2006 and 2010. The width of the bins is 30 owners. $N=9,409$.}
+\caption*{\small\noindent Notes: Agricultural leases signed between 2006 and 2010 in the full sample of Table~\ref{tab:table1}, 9,409 leases. The number of owners is that of the leased tract, and the bins are 30 owners wide.}
 \end{flushleft}
 \end{minipage}
 \end{figure}
@@ -815,7 +823,7 @@ Figures \ref{figA1}, \ref{figA2}, \ref{figA3}, and \ref{figA4} visualize some of
 \begin{minipage}{0.70\linewidth}
 \begin{flushleft}
 \vspace{0.25em}
-\caption*{\small\noindent Notes: The unit of observation is a tract with an agricultural lease signed between 2006 and 2010. The width of the bins is 0.025 ownership share. $N=9,409$.}
+\caption*{\small\noindent Notes: Agricultural leases signed between 2006 and 2010 in the full sample of Table~\ref{tab:table1}, 9,409 leases. The share is the largest ownership share of the leased tract, and the bins are 0.025 wide.}
 \end{flushleft}
 \end{minipage}
 \end{figure}
@@ -828,7 +836,7 @@ Figures \ref{figA1}, \ref{figA2}, \ref{figA3}, and \ref{figA4} visualize some of
 \begin{minipage}{0.71\linewidth}
 \begin{flushleft}
 \vspace{0.25em}
-\caption*{\small\noindent Notes: The unit of observation is a tract with an agricultural lease signed between 2006 and 2010. The width of the bins is 0.025 ownership share. Data include only leases with a positive tribal ownership share in the leased tract. $N=3,646$.}
+\caption*{\small\noindent Notes: Agricultural leases signed between 2006 and 2010 in the full sample of Table~\ref{tab:table1} on tracts with a positive tribal ownership share, 3,646 leases. The bins are 0.025 wide.}
 \end{flushleft}
 \end{minipage}
 \end{figure}
@@ -900,6 +908,14 @@ Collection and compliance & Annual, in advance & \S\S 162.224, 162.248, 162.250 
 \clearpage
 
 \subsection*{Instrumental-Variables Diagnostics and Robustness}
+
+\begin{figure}[H]
+\centering
+\caption{\label{fig:fs_by_instrument} First Stage by Instrument}
+{\small\makebox[0.49\textwidth]{\textbf{Panel A. Earliest qualifying probate order}}\makebox[0.49\textwidth]{\textbf{Panel B. Latest qualifying probate order}}}\par\vspace{0.2em}
+\includegraphics[width=0.98\textwidth]{fig_fs_by_instrument.pdf}
+\caption*{\small\noindent Notes: Preferred IV sample, 6,337 leases on 44 reservations. Each panel plots $1/\sqrt{s_{\max}}$ against one instrument, in years, both net of the other instrument and of the fixed effects and lease controls of Table~\ref{tab:iv_firststage}. Points are means of 20 equal-count bins with 95 percent intervals clustered by reservation, and each fitted slope equals that instrument's coefficient in Table~\ref{tab:iv_firststage}.}
+\end{figure}
 
 \input{table_ownership_snapshot_validation.tex}
 
