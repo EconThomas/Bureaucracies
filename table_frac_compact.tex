@@ -1,25 +1,19 @@
-% table_frac_compact.tex --- Descriptive ownership fractionation and lease income per trust acre.
-% include via:  \estwide{table_frac_compact.tex}{5}{c}
-% Each column reports one ordinary least-squares regression of log annual lease income per trust
-% acre on a single ownership measure on the multi-owner sample of agricultural leases of allotted
-% trust land, 2006--2010 (n = 8,662 leases on 45 reservations). All columns include reservation
-% fixed effects, lease-signing year fixed effects, and the baseline lease controls (lease term in
-% years, resource-type indicators with surface-resource-only leases as the omitted category, log
-% tract acreage, and the fee-simple share). Standard errors in parentheses are clustered at the
-% reservation level; the wild-cluster bootstrap p-value (Rademacher, null imposed, B = 9,999)
-% accounts for the small number of clusters. Income is in 2010 dollars per trust acre per year.
-% These are descriptive associations, not causal estimates.
+% table_frac_compact.tex --- Descriptive ownership fractionation and lease income per trust acre (Table 2)
+% Written by manuscript_rewrite_20261121/code/make_exhibits.py on the branch work/rewrite-expanded-20261121 (step 2 of the rewrite).
+% Every printed number is asserted against its source; log: manuscript_rewrite_20261121/exhibits_check_log.csv.
+% Source: results_pass_outputs_descriptive_iv_sample/csv/task1_table2.csv, columns 1 to 5 (column 1 = the least-squares row of Table 4)
+% include via: \estwide{table_frac_compact.tex}{5}{c}
  & (1) & (2) & (3) & (4) & (5) \\
 \midrule
 Ownership measure & $1/\sqrt{s_{\max}}$ & $s_{\max}$ & Owners$\,/\,1{,}000$ & HHI $\in[0,1]$ & $s_{\max,2}$ \\
 \addlinespace
-Coefficient & $-$0.0334 & 0.1191 & $-$0.3389 & 0.1301 & 0.0988 \\
- & (0.0104) & (0.0372) & (0.1790) & (0.0455) & (0.0277) \\
-Wild-cluster bootstrap $p$ & 0.014 & 0.013 & 0.100 & 0.018 & 0.004 \\
+Coefficient & $-$0.0305 & 0.1097 & $-$0.5830 & 0.1258 & 0.1005 \\
+ & (0.0135) & (0.0451) & (0.1799) & (0.0563) & (0.0346) \\
+Wild-cluster bootstrap $p$ & 0.051 & 0.031 & 0.014 & 0.048 & 0.014 \\
 \midrule
-Outcome mean & 2.653 & 2.653 & 2.653 & 2.653 & 2.653 \\
-Observations & 8,662 & 8,662 & 8,662 & 8,662 & 8,662 \\
-Reservation clusters & 45 & 45 & 45 & 45 & 45 \\
+Outcome mean & 2.724 & 2.724 & 2.724 & 2.724 & 2.724 \\
+Observations & 6,337 & 6,337 & 6,337 & 6,337 & 6,337 \\
+Reservation clusters & 44 & 44 & 44 & 44 & 44 \\
 Lease controls & Yes & Yes & Yes & Yes & Yes \\
 Reservation fixed effects & Yes & Yes & Yes & Yes & Yes \\
 Lease-signing year fixed effects & Yes & Yes & Yes & Yes & Yes \\

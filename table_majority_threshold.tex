@@ -1,0 +1,48 @@
+% table_majority_threshold.tex --- Majority threshold, coalition size, and lease income per trust acre (new appendix table, decision 1a and 1b)
+% Written by manuscript_rewrite_20261121/code/make_exhibits.py on the branch work/rewrite-expanded-20261121 (step 2 of the rewrite).
+% Every printed number is asserted against its source; log: manuscript_rewrite_20261121/exhibits_check_log.csv.
+% Source: reports/130_majority_threshold_expanded.csv (W35dn, W35dnt, W35dni, balance W35dn)
+% Source: reports/122_majority_threshold.csv (E_tract_universe, leased_AU, W35dn)
+% Source: reports/129_mechanism_expanded.csv (Test 4: T4a_k3, T4a_k4p, T4b_k3p, T4c_all_tol6)
+% include via: \input{table_majority_threshold.tex}
+\begin{table}[H]
+\caption{Majority Threshold, Coalition Size, and Lease Income per Trust Acre}
+\label{tab:majority_threshold}
+\footnotesize
+\setlength\extrarowheight{-1pt}
+\setlength{\tabcolsep}{3pt}
+\noindent\textit{Panel A. Jump in log lease income per trust acre where the largest trust share passes one half}\par\smallskip
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{5.6cm}ccccc}
+\toprule Specification & Jump (SE) & WB $p$ & 95\% interval & \shortstack{Leases below\\/ above} & $G$ \\ \midrule
+Preferred specification & $-$0.117 (0.062) & 0.082 & [-0.244, 0.009] & 682 / 417 & 36 \\
+Adding the tribal share & $-$0.114 (0.062) & 0.092 & [-0.241, 0.012] & 682 / 417 & 36 \\
+Largest trust owner an individual & $-$0.014 (0.104) & 0.887 & [-0.226, 0.199] & 358 / 165 & 33 \\
+\bottomrule \end{tabular*}
+\vspace{0.6em}
+\noindent\textit{Panel B. Jump in leasing at the same threshold, 2010 universe of trust tracts}\par\smallskip
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{6.6cm}cccc}
+\toprule Outcome & Jump (SE) & WB $p$ & \shortstack{Tracts below\\/ above} & \shortstack{Land-area\\clusters} \\ \midrule
+Share of tracts with an agricultural lease & $-$0.009 (0.012) & 0.493 & 5,301 / 3,699 & 139 \\
+\bottomrule \end{tabular*}
+\vspace{0.6em}
+\noindent\textit{Panel C. Coalition size, least squares in the preferred IV sample}\par\smallskip
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{6.4cm}ccccc}
+\toprule Regressor & Coefficient (SE) & WB $p$ & 95\% interval & $N$ & $G$ \\ \midrule
+Majority requires three owners ($k^*=3$) & $-$0.0061 (0.0178) & 0.737 & [-0.042, 0.030] & 6,337 & 44 \\
+Majority requires four or more owners ($k^*\geq 4$) & $-$0.0380 (0.0253) & 0.154 & [-0.089, 0.013] & 6,337 & 44 \\
+$k^*\geq 3$, largest share from 0.2 to 0.5 & 0.0029 (0.0311) & 0.926 & [-0.060, 0.066] & 3,375 & 42 \\
+Two largest owners together above one half & 0.0363 (0.0612) & 0.609 & [-0.088, 0.160] & 2,114 & 38 \\
+\bottomrule \end{tabular*}
+\vspace{0.6em}
+\noindent\textit{Panel D. Balance at the threshold, preferred window}\par\smallskip
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{5.6cm}cc}
+\toprule Covariate & Jump (SE) & WB $p$ \\ \midrule
+Log acres & $-$0.127 (0.076) & 0.113 \\
+Lease term in years & $-$0.186 (0.139) & 0.182 \\
+Fee-simple share & $-$0.006 (0.011) & 0.613 \\
+Tribal share & $-$0.050 (0.035) & 0.234 \\
+Lease year & 0.121 (0.126) & 0.342 \\
+\bottomrule \end{tabular*}
+\parbox{1\textwidth}{\begin{spacing}{0.8}\small\noindent Notes: Panels A, B, and D use largest trust shares from 0.35 to 0.65, except one half, with a linear slope on each side and owner-count fixed effects. Panels A and D use the preferred IV sample and reservation fixed effects, and Panel A adds lease-year indicators and the lease controls. Panel B uses multi-owner, not wholly tribal trust tracts with a surface estate, log acreage, and land-area fixed effects and clusters. In Panel C, which holds $1/\sqrt{s_{\max}}$ and owner-count bins fixed, $k^*$ is the fewest owners, largest first, who together hold more than half of the trust interests. At the headline estimate, the smooth change between shares of 0.50 and 0.55 is 0.0091 log points. Intervals are cluster-robust with $G-1$ degrees of freedom.\end{spacing}}
+\normalsize
+\end{table}

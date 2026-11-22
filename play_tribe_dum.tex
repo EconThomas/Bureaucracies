@@ -1,20 +1,16 @@
-% play_tribe_dum.tex (Appendix) --- Presence of tribal ownership and lease income per trust acre.
-% include via:  \estwide{play_tribe_dum.tex}{3}{c}
-% OLS of log annual lease income per trust acre on an indicator for the tribe holding any
-% ownership of the tract, full constructed sample, agricultural leases of allotted trust land,
-% 2006--2010. Lease controls are the lease term, resource-type indicators (surface-resource-only
-% leases omitted), and log tract acreage; the fee-simple share enters where indicated. All
-% columns include reservation and lease-signing year fixed effects. Reservation-clustered SEs in
-% parentheses; wild-cluster bootstrap p-values (B = 9,999) in square brackets. Descriptive
-% associations, not causal estimates.
+% play_tribe_dum.tex --- Presence of tribal ownership and lease income per trust acre (Table A10)
+% Written by manuscript_rewrite_20261121/code/make_exhibits.py on the branch work/rewrite-expanded-20261121 (step 2 of the rewrite).
+% Every printed number is asserted against its source; log: manuscript_rewrite_20261121/exhibits_check_log.csv.
+% Source: results_pass_outputs_descriptive_iv_sample/csv/task3_tribal.csv, Table A10
+% include via: \estwide{play_tribe_dum.tex}{3}{c}
  & (1) & (2) & (3) \\
 \midrule
-Tribe holds any ownership & $-$0.020 & $-$0.021 & 0.011 \\
- & (0.026)\,[0.449] & (0.026)\,[0.425] & (0.030)\,[0.732] \\[0.3ex]
+Tribe holds any ownership & $-$0.022 & $-$0.020 & $-$0.021 \\
+ & (0.028)\,[0.432] & (0.028)\,[0.487] & (0.027)\,[0.450] \\[0.3ex]
 \midrule
 Lease-signing year fixed effects & Yes & Yes & Yes \\
 Reservation fixed effects & Yes & Yes & Yes \\
 Fee-simple share & No & Yes & Yes \\
 Lease controls & No & No & Yes \\
-Reservation clusters & 46 & 46 & 46 \\
-Observations & 9,403 & 9,403 & 9,403 \\
+Reservation clusters & 44 & 44 & 44 \\
+Observations & 6,337 & 6,337 & 6,337 \\

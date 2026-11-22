@@ -1,35 +1,26 @@
-% table_iv_main_crowex.tex --- Main IV estimates, Crow-excluded baseline (G=38) with Crow-included comparison (G=39).
-% include via:  \estwide{table_iv_main_crowex.tex}{4}{c}
-% Round 2 (2026-09-28, Olga C44): the two +1 reciprocal owner-count rows are replaced by sqrt(owners),
-% the form implied by equation (5), from code/06_iv/116; the over-id p range covers all displayed rows.
-% Edited by analysis_2026/revision_round2_20260927/code/apply_batch_d6.py; retained cells verified.
-% 2SLS of log annual lease income per trust acre on each fractionation form, instrumented by the
-% earliest and latest qualifying probate orders (orders approved no later than the lease effective
-% date), exact-date strict construction, on agency-administered, multi-owner, surface-resource-only
-% agricultural leases of allotted trust land, 2006--2010, with qualifying probate orders on or after
-% 1938. Reservation and lease-signing year fixed effects; controls = lease term, fee-simple share,
-% log tract acreage. CRV1 standard errors in parentheses (clustered by reservation); WB p =
-% wild-cluster bootstrap (WRE-N, null imposed, Rademacher, B = 99,999); AR = Anderson--Rubin 95\%
-% set; effective F = Montiel Olea--Pflueger; over-id p = Sargan. Income in 2010 dollars per trust
-% acre per year. These are causal instrumental-variable estimates under the stated exclusion restriction.
- & \multicolumn{2}{c}{Crow excluded ($G=38$)} & \multicolumn{2}{c}{Crow included ($G=39$)} \\
+% table_iv_main_crowex.tex --- Main IV estimates, expanded sample, Crow excluded and included (Table 4)
+% Written by manuscript_rewrite_20261121/code/make_exhibits.py on the branch work/rewrite-expanded-20261121 (step 2 of the rewrite).
+% Every printed number is asserted against its source; log: manuscript_rewrite_20261121/exhibits_check_log.csv.
+% Source: results_pass_outputs_expanded_sample/csv/task2_main_iv.csv (least-squares standard errors after decision 11)
+% include via: \estwide{table_iv_main_crowex.tex}{4}{c}
+ & \multicolumn{2}{c}{Crow excluded ($G=44$)} & \multicolumn{2}{c}{Crow included ($G=45$)} \\
 \cmidrule(lr){2-3}\cmidrule(lr){4-5}
  & Coefficient & WB $p$ / AR 95\% & Coefficient & WB $p$ / AR 95\% \\
 \midrule
-$1/\sqrt{s_{\max}}$ (eq.~9) & $-$0.2341 & 0.020 & $-$0.1755 & 0.048 \\
- & (0.0697) & [-0.415, -0.066] & (0.0731) & [-0.344, 0.016] \\[0.3ex]
-$s_{\max}$ & 0.6380 & 0.035 & 0.4824 & 0.066 \\
- & (0.2061) & [0.181, 1.186] & (0.2174) & [-0.039, 1.034] \\[0.3ex]
-$1/s_{\max}$ & $-$0.0542 & 0.018 & $-$0.0401 & 0.049 \\
- & (0.0167) & [-0.100, -0.015] & (0.0169) & [-0.080, 0.004] \\[0.3ex]
-$\sqrt{\text{owners}}$ (eq.~5) & $-$0.0220 & 0.017 & $-$0.0151 & 0.094 \\
- & (0.0072) & [-0.039, -0.006] & (0.0076) & [-0.031, 0.001] \\[0.3ex]
-$\ln(\text{owners})$ & $-$0.0569 & 0.020 & $-$0.0404 & 0.079 \\
- & (0.0177) & [-0.100, -0.015] & (0.0191) & [-0.083, 0.003] \\[0.3ex]
+$1/\sqrt{s_{\max}}$ (eq.~9) & $-$0.1388 & 0.019 & $-$0.0971 & 0.107 \\
+ & (0.0504) & [-0.242, -0.020] & (0.0549) & [-0.212, 0.040] \\[0.3ex]
+$s_{\max}$ & 0.4016 & 0.020 & 0.2836 & 0.106 \\
+ & (0.1456) & [0.061, 0.684] & (0.1596) & [-0.118, 0.609] \\[0.3ex]
+$1/s_{\max}$ & $-$0.0326 & 0.020 & $-$0.0225 & 0.113 \\
+ & (0.0120) & [-0.058, -0.005] & (0.0129) & [-0.051, 0.009] \\[0.3ex]
+$\sqrt{\text{owners}}$ (eq.~5) & $-$0.0141 & 0.023 & $-$0.0093 & 0.138 \\
+ & (0.0051) & [-0.026, -0.002] & (0.0057) & [-0.023, 0.004] \\[0.3ex]
+$\ln(\text{owners})$ & $-$0.0334 & 0.024 & $-$0.0228 & 0.127 \\
+ & (0.0123) & [-0.061, -0.004] & (0.0134) & [-0.054, 0.009] \\[0.3ex]
 \midrule
-Same-sample OLS: $1/\sqrt{s_{\max}}$ & $-$0.0371 & 0.264 & $-$0.0473 & 0.170 \\
- & (0.0207) & & (0.0170) & \\[0.3ex]
-Effective $F$ ($1/\sqrt{s_{\max}}$ row) & \multicolumn{2}{c}{75.7} & \multicolumn{2}{c}{105.4} \\
-Over-id $p$ range & \multicolumn{2}{c}{[0.482, 0.984]} & \multicolumn{2}{c}{[0.339, 0.953]} \\
-Observations & \multicolumn{2}{c}{2,211} & \multicolumn{2}{c}{2,848} \\
-Reservations & \multicolumn{2}{c}{38} & \multicolumn{2}{c}{39} \\
+Same-sample OLS: $1/\sqrt{s_{\max}}$ & $-$0.0305 & 0.051 & $-$0.0368 & 0.030 \\
+ & (0.0135) & & (0.0128) & \\[0.3ex]
+Effective $F$ ($1/\sqrt{s_{\max}}$ row) & \multicolumn{2}{c}{93.4} & \multicolumn{2}{c}{117.4} \\
+Over-id $p$ range & \multicolumn{2}{c}{[0.219, 0.739]} & \multicolumn{2}{c}{[0.504, 0.972]} \\
+Observations & \multicolumn{2}{c}{6,337} & \multicolumn{2}{c}{7,188} \\
+Reservations & \multicolumn{2}{c}{44} & \multicolumn{2}{c}{45} \\

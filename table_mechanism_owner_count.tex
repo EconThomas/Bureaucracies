@@ -1,3 +1,9 @@
+% table_mechanism_owner_count.tex --- Probate-timing IV estimates by owner range (Table A7)
+% Written by manuscript_rewrite_20261121/code/make_exhibits.py on the branch work/rewrite-expanded-20261121 (step 2 of the rewrite).
+% Every printed number is asserted against its source; log: manuscript_rewrite_20261121/exhibits_check_log.csv.
+% Source: results_pass_outputs_expanded_sample/csv/task7_owner_ranges.csv; difference rows from reports/129_mechanism_expanded.csv (Test 2)
+% Source: Panel D (the least-squares spline) dropped by decision 1(f)
+% include via: \input{table_mechanism_owner_count.tex}
 \begin{table}[H]
 \caption{Probate-Timing IV Estimates by Owner Range}
 \label{tab:mechanism_owner_count}
@@ -10,26 +16,23 @@
  & \shortstack{2SLS coef.\\(SE)} & \shortstack{WB\\$p$} & \shortstack{AR 95\%\\CI} & \shortstack{Eff.\\$F$} & \shortstack{Over-id\\$p$} & $N$ / $G$ \\
 \midrule
 \multicolumn{7}{l}{\textit{Panel A. Endogenous measure: $\ln(\text{owners})$}} \\
-All owner counts & $-0.0569$ (0.0177) & 0.020 & $[-0.100,-0.015]$ & 554.6 & 0.665 & 2,211 / 38 \\
-2--30 owners & $-0.1737$ (0.0433) & 0.009 & $[-0.283,-0.090]$ & 243.8 & 0.559 & 1,276 / 36 \\
-More than 30 owners & $-0.0239$ (0.1119) & 0.838 & $[-0.323,0.253]$ & 19.7 & 0.734 & 929 / 29 \\
+All owner counts & $-0.0334$ (0.0123) & 0.024 & $[-0.061,-0.004]$ & 1054.8 & 0.566 & 6,337 / 44 \\
+2--30 owners & $-0.0573$ (0.0321) & 0.116 & $[-0.132,0.012]$ & 506.5 & 0.452 & 4,181 / 43 \\
+More than 30 owners & $-0.0758$ (0.0587) & 0.206 & $[-0.222,0.063]$ & 74.9 & 0.645 & 2,152 / 39 \\
+Difference, more than 30 minus 2--30 & $-0.0185$ (0.0634) & 0.772 & & & & 6,333 / 44 \\
 \addlinespace[0.4em]
 \multicolumn{7}{l}{\textit{Panel B. Endogenous measure: $\sqrt{\text{owners}}$}} \\
-All owner counts & $-0.0220$ (0.0072) & 0.017 & $[-0.039,-0.006]$ & 252.7 & 0.482 & 2,211 / 38 \\
-2--30 owners & $-0.1157$ (0.0281) & 0.007 & $[-0.186,-0.059]$ & 256.3 & 0.633 & 1,276 / 36 \\
-More than 30 owners & $-0.0046$ (0.0231) & 0.849 & $[-0.073,0.050]$ & 17.3 & 0.726 & 929 / 29 \\
+All owner counts & $-0.0141$ (0.0051) & 0.023 & $[-0.026,-0.002]$ & 513.4 & 0.739 & 6,337 / 44 \\
+2--30 owners & $-0.0383$ (0.0212) & 0.112 & $[-0.088,0.008]$ & 538.3 & 0.491 & 4,181 / 43 \\
+More than 30 owners & $-0.0159$ (0.0125) & 0.215 & $[-0.048,0.013]$ & 68.2 & 0.625 & 2,152 / 39 \\
+Difference, more than 30 minus 2--30 & $0.0224$ (0.0233) & 0.362 & & & & 6,333 / 44 \\
 \addlinespace[0.4em]
 \multicolumn{7}{l}{\textit{Panel C. Endogenous measure: $1/\sqrt{s_{\max}}$}} \\
-All owner counts & $-0.2341$ (0.0697) & 0.020 & $[-0.415,-0.066]$ & 75.7 & 0.984 & 2,211 / 38 \\
-2--30 owners & $-0.4998$ (0.1780) & 0.055 & empty & 31.1 & 0.028 & 1,276 / 36 \\
-More than 30 owners & $-0.0485$ (0.2524) & 0.850 & $[-0.829,0.647]$ & 9.3 & 0.721 & 929 / 29 \\
-\addlinespace[0.4em]
-\multicolumn{7}{l}{\textit{Panel D. Least-squares spline in the owner count, multi-owner sample}} \\
-Slope per owner, 2--30 & $-0.00169$ (0.00082) & 0.065 & -- & -- & -- & 8,662 / 45 \\
-Slope per owner, above 30 & $-0.00020$ (0.00018) & 0.294 & -- & -- & -- & 8,662 / 45 \\
-Difference in slopes & $-0.00149$ (0.00083) & 0.097 & -- & -- & -- & 8,662 / 45 \\
+All owner counts & $-0.1388$ (0.0504) & 0.019 & $[-0.242,-0.020]$ & 93.4 & 0.275 & 6,337 / 44 \\
+2--30 owners & $-0.1707$ (0.1135) & 0.167 & $[-0.320,0.086]$ & 71.3 & 0.094 & 4,181 / 43 \\
+More than 30 owners & $-0.2416$ (0.1685) & 0.143 & $[-0.730,0.223]$ & 14.1 & 0.790 & 2,152 / 39 \\
 \bottomrule
 \end{tabular*}
-\parbox{1\textwidth}{\begin{spacing}{0.8}\small\noindent Notes: Panels A to C report two-stage least-squares estimates of log lease income per trust acre in the preferred IV sample, which excludes the Crow Reservation, using the earliest and latest qualifying probate orders as instruments. Each row changes the endogenous ownership measure or restricts the sample by the tract's owner count; the owner-range samples drop reservations with a single lease in the range. The instruments and the reduced form are the same in every row, so the measures rescale one relationship. All IV specifications include reservation fixed effects, lease-signing year fixed effects, lease term, fee-simple share, and log tract acreage. Standard errors cluster by reservation. Wild-cluster bootstrap $p$-values use WRE-N with 99,999 replications. Anderson--Rubin intervals are weak-instrument-robust 95 percent confidence sets; an empty set means that the test rejects every coefficient value, which happens when the two instruments disagree. Over-identification $p$-values are Sargan tests. Panel D regresses log lease income per trust acre in the multi-owner sample on a linear spline in the owner count with a knot at 30 owners, with the fixed effects and controls of Table~\ref{tab:frac_compact}; its wild-cluster bootstrap $p$-values use 9,999 replications, and the last row tests whether the two slopes are equal.\end{spacing}}
+\parbox{1\textwidth}{\begin{spacing}{0.8}\small\noindent Notes: Two-stage least-squares estimates of log lease income per trust acre in the preferred IV sample, with the instruments, controls, and fixed effects of Table~\ref{tab:table_iv_main}. Each row changes the ownership measure or restricts the sample by owner count, and the owner-range samples drop reservations with one lease in the range. The difference rows come from one regression on both ranges in which every fixed effect, control, and instrument is interacted with an indicator for more than 30 owners. Standard errors cluster by reservation, wild-cluster bootstrap $p$-values use 99,999 replications, and Anderson--Rubin intervals are weak-instrument-robust 95 percent sets. Over-identification $p$-values are Sargan tests.\end{spacing}}
 \normalsize
 \end{table}

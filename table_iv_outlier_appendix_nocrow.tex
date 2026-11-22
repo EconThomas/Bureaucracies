@@ -1,23 +1,17 @@
-% table_iv_outlier_appendix_nocrow.tex --- Outcome construction and outlier robustness
-% (exact-date strict construction, Crow excluded).
-% include via:  \estwide{table_iv_outlier_appendix_nocrow.tex}{7}{c}
-% Each row reports the main 2SLS estimate (exact-date strict instruments, Crow excluded) after
-% rebuilding the sample under the indicated treatment of extreme lease income per trust acre. The
-% build excludes extreme observations rather than capping them (the outcome is trimmed, not
-% capped); the baseline trims the 1st and 99th percentiles. The final row additionally drops
-% leases below one trust acre. FE = reservation + lease-signing year; controls = lease term,
-% fee-simple share, log tract acreage. CRV1 standard errors in parentheses; WB p = wild-cluster
-% bootstrap (B = 99,999); AR = Anderson--Rubin 95\% set; effective F = Montiel Olea--Pflueger;
-% over-id p = Sargan. Income in 2010 dollars per trust acre. Causal instrumental-variable estimates.
+% table_iv_outlier_appendix_nocrow.tex --- Outcome trimming and outlier robustness, Crow excluded (Table A6)
+% Written by manuscript_rewrite_20261121/code/make_exhibits.py on the branch work/rewrite-expanded-20261121 (step 2 of the rewrite).
+% Every printed number is asserted against its source; log: manuscript_rewrite_20261121/exhibits_check_log.csv.
+% Source: results_pass_outputs_expanded_sample/csv/task4_outliers.csv; baseline row from task2_main_iv.csv
+% include via: \estfit{table_iv_outlier_appendix_nocrow.tex}{7}{c}
  & Coefficient & WB $p$ & AR 95\% CI & Effective $F$ & Over-id $p$ & $N$ & Clusters \\
 \midrule
-Baseline 1/99 trim & $-$0.2341 & 0.020 & [-0.415, -0.066] & 75.7 & 0.984 & 2,211 & 38 \\
- & (0.0697) & & & & & & \\[0.3ex]
-No trimming of income per trust acre & $-$0.2265 & 0.016 & [-0.385, -0.065] & 77.0 & 0.949 & 2,284 & 38 \\
- & (0.0645) & & & & & & \\[0.3ex]
-2/98 trim & $-$0.2041 & 0.024 & [-0.382, -0.045] & 76.8 & 0.975 & 2,157 & 37 \\
- & (0.0676) & & & & & & \\[0.3ex]
-5/95 trim & $-$0.2113 & 0.011 & [-0.374, -0.062] & 84.8 & 0.615 & 1,998 & 37 \\
- & (0.0633) & & & & & & \\[0.3ex]
-Baseline trim, trust acres $\geq$ 1 & $-$0.2341 & 0.020 & [-0.415, -0.066] & 75.7 & 0.984 & 2,211 & 38 \\
- & (0.0697) & & & & & & \\[0.3ex]
+Baseline 1/99 trim & $-$0.1388 & 0.019 & [-0.242, -0.020] & 93.4 & 0.275 & 6,337 & 44 \\
+ & (0.0504) & & & & & & \\[0.3ex]
+No trimming of income per trust acre & $-$0.1233 & 0.031 & [-0.236, -0.021] & 94.2 & 0.261 & 6,499 & 47 \\
+ & (0.0499) & & & & & & \\[0.3ex]
+2/98 trim & $-$0.1391 & 0.034 & [-0.263, -0.016] & 92.5 & 0.233 & 6,186 & 43 \\
+ & (0.0570) & & & & & & \\[0.3ex]
+5/95 trim & $-$0.1644 & 0.015 & [-0.304, -0.029] & 89.4 & 0.545 & 5,743 & 43 \\
+ & (0.0567) & & & & & & \\[0.3ex]
+Baseline trim, trust acres $\geq$ 1 & $-$0.1396 & 0.019 & [-0.242, -0.021] & 93.0 & 0.278 & 6,336 & 44 \\
+ & (0.0503) & & & & & & \\[0.3ex]
