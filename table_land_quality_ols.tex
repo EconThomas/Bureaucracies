@@ -1,0 +1,35 @@
+% table_land_quality_ols.tex --- Land quality, fractionation, and the least-squares estimate (new appendix table, decision 4a, first part)
+% Written by manuscript_rewrite_20261121/code/make_exhibits.py on the branch work/rewrite-expanded-20261121 (step 2 of the rewrite).
+% Every printed number is asserted against its source; log: manuscript_rewrite_20261121/exhibits_check_log.csv.
+% Source: reports/131_ols_land_quality.csv (sorting, least-squares, and copied IV rows)
+% include via: \input{table_land_quality_ols.tex}
+\begin{table}[H]
+\caption{Land Quality, Fractionation, and the Least-Squares Estimate}
+\label{tab:land_quality_ols}
+\footnotesize
+\setlength\extrarowheight{-1pt}
+\setlength{\tabcolsep}{3pt}
+\noindent\textit{Panel A. Land quality per standard deviation of fractionation}\par\smallskip
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{5.6cm}cccc}
+\toprule & \multicolumn{2}{c}{\shortstack{Inverse square root of\\the largest share}} & \multicolumn{2}{c}{Log owner count} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5} Land measure (standardized) & Coefficient & $p$ & Coefficient & $p$ \\ \midrule
+Crop productivity (NCCPI), higher is better & 0.001 & 0.795 & $-$0.010 & 0.241 \\
+Rangeland productivity, higher is better & 0.014 & 0.018 & 0.011 & 0.172 \\
+Available water storage, higher is better & 0.002 & 0.831 & $-$0.010 & 0.374 \\
+Land capability class, higher is worse & 0.027 & 0.064 & 0.034 & 0.019 \\
+Slope & $-$0.007 & 0.615 & 0.005 & 0.826 \\
+Elevation & $-$0.013 & 0.003 & $-$0.017 & 0.016 \\
+Surface sand & 0.007 & 0.596 & $-$0.015 & 0.479 \\
+Surface clay & $-$0.007 & 0.648 & 0.042 & 0.113 \\
+\bottomrule \end{tabular*}
+\vspace{0.6em}
+\noindent\textit{Panel B. Least squares and IV with the land batteries}\par\smallskip
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{5.0cm}cccc}
+\toprule Added land controls & \shortstack{Least squares\\(SE)} & WB $p$ & \shortstack{2SLS\\(SE)} & WB $p$ \\ \midrule
+No added land controls & $-$0.0270 (0.0152) & 0.125 & $-$0.1462 (0.0497) & 0.014 \\
+Terrain and texture (4) & $-$0.0326 (0.0137) & 0.058 & $-$0.1326 (0.0338) & $<$0.001 \\
+Soil productivity and condition (4) & $-$0.0182 (0.0149) & 0.265 & $-$0.0941 (0.0434) & 0.046 \\
+\bottomrule \end{tabular*}
+\parbox{1\textwidth}{\begin{spacing}{0.8}\small\noindent Notes: Both panels use the 6,039 leases on 42 reservations of Panel A of Table~\ref{tab:land_characteristics_sensitivity}. Panel A regresses each standardized land measure on the standardized fractionation measure, with reservation and lease-signing-year fixed effects, the lease controls, and cluster-robust $p$-values. Panel B adds each land battery to the preferred least-squares and two-stage least-squares specifications. Standard errors cluster by reservation, and wild-cluster bootstrap $p$-values use 99,999 replications.\end{spacing}}
+\normalsize
+\end{table}

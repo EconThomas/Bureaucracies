@@ -1,17 +1,18 @@
-% table_count_iv_robustness.tex --- Count-Based IV Robustness (restacked, portrait-safe, 6 data columns)
-% include via:  \estwide{table_count_iv_robustness.tex}{6}{c}
-% Round 2 (2026-09-28, Olga C44): the two +1 reciprocal owner-count rows are replaced by sqrt(owners),
-% the form implied by equation (5), from code/06_iv/116 (apply_batch_d6.py); retained cells verified.
- & \multicolumn{3}{c}{Crow excluded ($G=38$)} & \multicolumn{3}{c}{Crow included ($G=39$)} \\
+% table_count_iv_robustness.tex --- IV estimates with owner-count measures (Table A3)
+% Written by manuscript_rewrite_20261121/code/make_exhibits.py on the branch work/rewrite-expanded-20261121 (step 2 of the rewrite).
+% Every printed number is asserted against its source; log: manuscript_rewrite_20261121/exhibits_check_log.csv.
+% Source: results_pass_outputs_expanded_sample/csv/task4_count_iv.csv
+% include via: \estwide{table_count_iv_robustness.tex}{6}{c}
+ & \multicolumn{3}{c}{Crow excluded ($G=44$)} & \multicolumn{3}{c}{Crow included ($G=45$)} \\
 \cmidrule(lr){2-4}\cmidrule(lr){5-7}
 Ownership measure & Coef. & WB $p$ / AR & Eff. $F$ & Coef. & WB $p$ / AR & Eff. $F$ \\
 \midrule
-$\sqrt{\text{owners}}$ & $-$0.0220 & 0.017 & 252.7 & $-$0.0151 & 0.094 & 314.7 \\
- & (0.0072) & [-0.039, -0.006] & & (0.0076) & [-0.031, 0.001] & \\[0.3ex]
-$\ln(\text{owners})$ & $-$0.0569 & 0.020 & 554.6 & $-$0.0404 & 0.079 & 752.0 \\
- & (0.0177) & [-0.100, -0.015] & & (0.0191) & [-0.083, 0.003] & \\[0.3ex]
-$\ln(\text{effective owners})$ & $-$0.1290 & 0.021 & 205.6 & $-$0.0923 & 0.072 & 323.7 \\
- & (0.0395) & [-0.229, -0.035] & & (0.0423) & [-0.192, 0.008] & \\[0.3ex]
+$\sqrt{\text{owners}}$ & $-$0.0141 & 0.023 & 513.4 & $-$0.0093 & 0.138 & 441.3 \\
+ & (0.0051) & [-0.026, -0.002] & & (0.0057) & [-0.023, 0.004] & \\[0.3ex]
+$\ln(\text{owners})$ & $-$0.0334 & 0.024 & 1054.8 & $-$0.0228 & 0.127 & 1201.2 \\
+ & (0.0123) & [-0.061, -0.004] & & (0.0134) & [-0.054, 0.009] & \\[0.3ex]
+$\ln(\text{effective owners})$ & $-$0.0752 & 0.020 & 248.8 & $-$0.0516 & 0.117 & 299.3 \\
+ & (0.0268) & [-0.133, -0.010] & & (0.0297) & [-0.118, 0.020] & \\[0.3ex]
 \midrule
-Observations & \multicolumn{3}{c}{2,211} & \multicolumn{3}{c}{2,848} \\
-Reservations & \multicolumn{3}{c}{38} & \multicolumn{3}{c}{39} \\
+Observations & \multicolumn{3}{c}{6,337} & \multicolumn{3}{c}{7,188} \\
+Reservations & \multicolumn{3}{c}{44} & \multicolumn{3}{c}{45} \\

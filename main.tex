@@ -502,7 +502,7 @@ The estimates come from agricultural leasing of allotted trust land, and Section
 \footnotesize
 \setlength\extrarowheight{-6pt}
 \estwide{table1.tex}{6}{c}
-\parbox{1\textwidth}{\begin{spacing}{0.8}\small\noindent Notes: Panel A reports means and standard deviations for lease, ownership, and tract variables. Panel B reports the probate-timing instruments, which are defined only for the IV-eligible sample. The full sample contains 9,409 agricultural leases of allotted trust land. The multi-owner sample contains 8,662 leases after dropping sole-owner tracts. The IV-eligible, Crow-included column uses the exact-date qualifying-probate rule and contains 2,848 multi-owner, surface-resource-only, agency-pay leases. Excluding the 637 Crow leases yields the preferred IV sample of 2,211 leases. Income is in 2010 dollars.\end{spacing}}
+\parbox{1\textwidth}{\begin{spacing}{0.8}\small\noindent Notes: Panel A reports means and standard deviations for lease, ownership, and tract variables. Panel B reports the probate-timing instruments, which are defined only for the IV sample. The full sample contains 9,409 agricultural leases of allotted trust land. The multi-owner sample contains 8,662 leases after dropping sole-owner tracts. The IV sample is the preferred IV sample of 6,337 multi-owner, agency-pay leases on 44 reservations, with qualifying probate orders under the exact-date rule and the Crow Reservation excluded. A B tract's trust estate holds the surface and the minerals. Adding the 851 Crow leases gives 7,188 leases. Income is in 2010 dollars.\end{spacing}}
 \normalsize
 \end{table}
 
@@ -515,7 +515,7 @@ The estimates come from agricultural leasing of allotted trust land, and Section
 \estwide{table_frac_compact.tex}{5}{c}
 \endgroup
 \parbox{1\textwidth}{\begin{spacing}{0.8}
-\small\noindent Notes: Each column reports an ordinary least-squares regression of log lease income per trust acre on the ownership measure listed in the column. The sample includes multi-owner agricultural leases of allotted trust land signed between 2006 and 2010. All specifications include reservation fixed effects, lease-signing year fixed effects, lease term, resource-type indicators with surface-resource-only leases as the omitted category, log tract acreage, and fee-simple share. Standard errors appear in parentheses and cluster at the reservation level. Wild-cluster bootstrap $p$-values use Rademacher weights by reservation with the null imposed. Income is in 2010 dollars per trust acre per year.
+\small\noindent Notes: Each column reports an ordinary least-squares regression of log lease income per trust acre on the ownership measure listed in the column. The sample is the preferred IV sample of 6,337 leases on 44 reservations. All specifications include reservation fixed effects, lease-signing year fixed effects, lease term, an indicator for a trust estate that also holds the minerals, log tract acreage, and fee-simple share. Column 1 is the least-squares row of Table~\ref{tab:table_iv_main}. Standard errors appear in parentheses and cluster at the reservation level. Wild-cluster bootstrap $p$-values use Rademacher weights by reservation with the null imposed. Income is in 2010 dollars per trust acre per year.
 \end{spacing}}
 \end{table}
 
@@ -525,7 +525,7 @@ The estimates come from agricultural leasing of allotted trust land, and Section
 \includegraphics[width=0.78\textwidth]{max_share.png}
 \begin{minipage}{0.72\linewidth}
 \vspace{0.25em}
-\caption*{\small\noindent Notes: The unit of observation is a tract with an agricultural lease signed between 2006 and 2010. Each point is the mean of log lease income per trust acre within a 0.05-wide bin of the largest owner's share, after partialling out reservation and lease-signing year fixed effects and the lease-level controls, with a vertical bar giving the 95 percent confidence interval for the bin mean. The solid line is a linear fit and the shaded region its 95 percent confidence band, clustered by reservation. A binscatter linearity test does not reject a linear relationship ($p=0.19$). $N=8,662$ across 45 reservations.}
+\caption*{\small\noindent Notes: The unit of observation is a tract with an agricultural lease in the preferred IV sample, signed between 2006 and 2010. Each point is the mean of log lease income per trust acre within a 0.05-wide bin of the largest owner's share, after partialling out reservation and lease-signing year fixed effects and the lease-level controls, with a vertical bar giving the 95 percent confidence interval for the bin mean. The solid line is a linear fit and the shaded region its 95 percent confidence band, clustered by reservation. A binscatter linearity test does not reject a linear relationship ($p=0.24$). $N=6{,}337$ across 44 reservations.}
 \end{minipage}
 \end{figure}
 
@@ -535,7 +535,7 @@ The estimates come from agricultural leasing of allotted trust land, and Section
 \includegraphics[width=0.78\textwidth]{owners.png}
 \begin{minipage}{0.72\linewidth}
 \vspace{0.25em}
-\caption*{\small\noindent Notes: The unit of observation is a tract with an agricultural lease signed between 2006 and 2010, restricted to tracts with no tribal ownership. Each point is the mean of log lease income per trust acre within a bin two owners wide, after partialling out reservation and lease-signing year fixed effects and the lease-level controls, with a vertical bar giving the 95 percent confidence interval for the bin mean. The shaded region is a 95 percent confidence band that is heteroskedasticity-robust. No linear overlay is drawn, because a binscatter linearity test rejects a linear relationship ($p=0.02$). $N=5,018$ across 43 reservations.}
+\caption*{\small\noindent Notes: The unit of observation is a tract with an agricultural lease in the preferred IV sample, signed between 2006 and 2010, restricted to tracts with no tribal ownership. Each point is the mean of log lease income per trust acre within a bin two owners wide, after partialling out reservation and lease-signing year fixed effects and the lease-level controls, with a vertical bar giving the heteroskedasticity-robust 95 percent confidence interval for the bin mean. The shaded region is a 95 percent confidence band that is heteroskedasticity-robust. A binscatter linearity test with 12 bins does not reject a linear relationship ($p=0.32$). $N=3{,}439$ across 41 reservations.}
 \end{minipage}
 \end{figure}
 
@@ -547,7 +547,7 @@ The estimates come from agricultural leasing of allotted trust land, and Section
 \setlength\extrarowheight{-6pt}
 \estwide{table_iv_firststage_reducedform_crowex.tex}{2}{c}
 \parbox{1\textwidth}{\begin{spacing}{0.8}
-\small\noindent Notes: The table reports the first stage and reduced form for the main fractionation measure, $1/\sqrt{s_{\max}}$, and the corresponding Crow-included comparison. The preferred sample excludes the Crow Reservation and includes agency-pay, multi-owner, surface-resource-only agricultural leases of allotted trust land signed between 2006 and 2010, with qualifying probate orders on or after 1938. Qualifying probate orders are approved no later than the lease effective date. Specifications include reservation fixed effects, lease-signing year fixed effects, lease term, fee-simple share, and log tract acreage. Standard errors appear in parentheses and cluster at the reservation level. The effective $F$-statistic is the Montiel Olea and Pflueger statistic.
+\small\noindent Notes: The table reports the first stage and reduced form for the main fractionation measure, $1/\sqrt{s_{\max}}$, and the corresponding Crow-included comparison. The preferred sample excludes the Crow Reservation and includes agency-pay, multi-owner agricultural leases of allotted trust land signed between 2006 and 2010, on tracts whose trust estate holds the surface only or the surface and the minerals, with qualifying probate orders on or after 1938. Qualifying probate orders are approved no later than the lease effective date. Specifications include reservation fixed effects, lease-signing year fixed effects, lease term, fee-simple share, log tract acreage, and an indicator for a trust estate that also holds the minerals. Standard errors appear in parentheses and cluster at the reservation level. The effective $F$-statistic is the Montiel Olea and Pflueger statistic.
 \end{spacing}}
 \end{table}
 
@@ -558,7 +558,7 @@ The estimates come from agricultural leasing of allotted trust land, and Section
 \caption{\label{fig:iv_fs_rf} First Stage and Reduced Form}
 {\small\makebox[0.49\textwidth]{\textbf{Panel A. First stage}}\makebox[0.49\textwidth]{\textbf{Panel B. Reduced form}}}\par\vspace{0.2em}
 \includegraphics[width=0.98\textwidth]{fig_iv_fs_rf_nocrow_gray.pdf}
-\caption*{\small\noindent Notes: Both panels use the preferred IV sample, which excludes the Crow Reservation and contains 2,211 leases across 38 reservations. The probate-timing index combines the earliest and latest qualifying probate orders using the first-stage coefficients and is standardized to mean zero and standard deviation one in the preferred IV sample. Panel A plots the first stage for the index. Panel B plots the reduced form for the index. Points are means of twenty equal-count bins of the index, with 95 percent confidence intervals clustered at the reservation level. All variables are residualized on reservation fixed effects, lease-signing year fixed effects, lease term, fee-simple share, and log tract acreage. The ratio of the reduced-form slope to the first-stage slope equals the two-stage least-squares estimate for the index specification.}
+\caption*{\small\noindent Notes: Both panels use the preferred IV sample, which excludes the Crow Reservation and contains 6,337 leases across 44 reservations. The probate-timing index combines the earliest and latest qualifying probate orders using the first-stage coefficients and is standardized to mean zero and standard deviation one in the preferred IV sample. Panel A plots the first stage for the index. Panel B plots the reduced form for the index. Points are means of twenty equal-count bins of the index, with 95 percent confidence intervals clustered at the reservation level. All variables are residualized on reservation fixed effects, lease-signing year fixed effects, lease term, fee-simple share, log tract acreage, and an indicator for a trust estate that also holds the minerals. The ratio of the reduced-form slope to the first-stage slope equals the two-stage least-squares estimate for the index specification.}
 \end{figure}
 
 \begin{table}[H]
@@ -569,7 +569,7 @@ The estimates come from agricultural leasing of allotted trust land, and Section
 \estwide{table_iv_main_crowex.tex}{4}{c}
 \endgroup
 \parbox{1\textwidth}{\begin{spacing}{0.8}
-\small\noindent Notes: Each row reports a separate two-stage least-squares regression of log lease income per trust acre on the indicated ownership measure. The instruments are the earliest and latest probate orders approved no later than the lease effective date. Measures increasing in fractionation have predicted negative coefficients, while measures increasing in concentration have predicted positive coefficients. The largest share enters linearly and as its inverse, which equals the number of owners when shares are equal. The $\sqrt{\text{owners}}$ row uses the owner-count form implied by equation~\eqref{(5)} under equal shares, and the $\ln(\text{owners})$ row uses the natural logarithm of the tract owner count. The preferred sample excludes the Crow Reservation. The comparison columns include Crow. All specifications include reservation fixed effects, lease-signing year fixed effects, lease term, fee-simple share, and log tract acreage. Standard errors appear in parentheses and cluster at the reservation level. Wild-cluster bootstrap $p$-values use WRE-N, impose the null, use Rademacher weights by reservation, and use 99,999 replications. Anderson-Rubin intervals are weak-instrument-robust 95 percent confidence sets. For the main form, the conditional likelihood ratio 95 percent confidence sets are [$-0.437$, $-0.067$] in the preferred sample and [$-0.415$, 0.003] in the Crow-included comparison. The effective $F$-statistic reported at the bottom refers to the main $1/\sqrt{s_{\max}}$ row. Row-specific first-stage diagnostics for the count-based alternatives appear in Appendix Table~\ref{tab:count_iv_robustness}. The effective $F$-statistic is the Montiel Olea and Pflueger statistic. Over-identification $p$-values are Sargan tests and do not establish instrument validity.
+\small\noindent Notes: Each row reports a separate two-stage least-squares regression of log lease income per trust acre on the indicated ownership measure. The instruments are the earliest and latest probate orders approved no later than the lease effective date. Measures increasing in fractionation have predicted negative coefficients, while measures increasing in concentration have predicted positive coefficients. The largest share enters linearly and as its inverse, which equals the number of owners when shares are equal. The $\sqrt{\text{owners}}$ row uses the owner-count form implied by equation~\eqref{(5)} under equal shares, and the $\ln(\text{owners})$ row uses the natural logarithm of the tract owner count. The preferred sample excludes the Crow Reservation. The comparison columns include Crow. All specifications include reservation fixed effects, lease-signing year fixed effects, lease term, fee-simple share, log tract acreage, and an indicator for a trust estate that also holds the minerals. Standard errors appear in parentheses and cluster at the reservation level. Wild-cluster bootstrap $p$-values use WRE-N, impose the null, use Rademacher weights by reservation, and use 99,999 replications. Anderson-Rubin intervals are weak-instrument-robust 95 percent confidence sets. For the main form, the conditional likelihood ratio 95 percent confidence sets are [$-$0.266, $-$0.022] in the preferred sample and [$-$0.224, 0.018] in the Crow-included comparison. The effective $F$-statistic reported at the bottom refers to the main $1/\sqrt{s_{\max}}$ row. Row-specific first-stage diagnostics for the owner-count alternatives appear in Appendix Table~\ref{tab:count_iv_robustness}. The effective $F$-statistic is the Montiel Olea and Pflueger statistic. Over-identification $p$-values are Sargan tests and do not establish instrument validity.
 \end{spacing}}
 \end{table}
 
@@ -580,7 +580,7 @@ The estimates come from agricultural leasing of allotted trust land, and Section
 \setlength\extrarowheight{-6pt}
 \estwide{table_iv_robust_crowex_short.tex}{4}{c}
 \parbox{1\textwidth}{\begin{spacing}{0.8}
-\small\noindent Notes: Each row reports a two-stage least-squares estimate of log lease income per trust acre on $1/\sqrt{s_{\max}}$, except for rows that name another concentration measure. The instruments are the earliest and latest probate orders approved no later than the lease effective date. Panel A reports the preferred Crow-excluded sample. Panel B reports the Crow-included comparison. Specifications include reservation fixed effects, lease-signing year fixed effects, lease term, fee-simple share, and log tract acreage unless the row states otherwise. Standard errors appear in parentheses and cluster at the reservation level. Wild-cluster bootstrap $p$-values use 99,999 replications. Anderson-Rubin intervals are weak-instrument-robust 95 percent confidence sets. The last column reports the number of leases. The reservation-by-allotment-decade rows use 34 reservations in Panel A and 35 in Panel B.
+\small\noindent Notes: Each row reports a two-stage least-squares estimate of log lease income per trust acre on $1/\sqrt{s_{\max}}$, except for rows that name another concentration measure. The instruments are the earliest and latest probate orders approved no later than the lease effective date. Panel A reports the preferred Crow-excluded sample. Panel B reports the Crow-included comparison. Specifications include reservation fixed effects, lease-signing year fixed effects, lease term, fee-simple share, log tract acreage, and an indicator for a trust estate that also holds the minerals unless the row states otherwise. Standard errors appear in parentheses and cluster at the reservation level. Wild-cluster bootstrap $p$-values use 99,999 replications. Anderson-Rubin intervals are weak-instrument-robust 95 percent confidence sets. The last column reports the number of leases. The rows with fixed effects for the reservation and the decade of the earliest recorded conveyance use 43 reservations in Panel A and 44 in Panel B.
 \end{spacing}}
 \normalsize
 \end{table}
@@ -591,7 +591,7 @@ The estimates come from agricultural leasing of allotted trust land, and Section
 \includegraphics[width=0.88\textwidth]{fig_spec_curve_panelA.pdf}
 \begin{minipage}{0.92\linewidth}
 \vspace{0.15em}
-{\footnotesize\noindent Notes: The figure reports two-stage least-squares coefficients on $1/\sqrt{s_{\max}}$ for log annual lease income per trust acre. Circles exclude Crow, and squares include Crow. Horizontal bars are Anderson--Rubin 95 percent confidence sets where available. Filled markers denote wild-cluster bootstrap $p<0.05$, open markers denote $p\geq0.05$, and the shaded band is the preferred-sample leave-one-reservation-out range. Bars are omitted where no Anderson--Rubin set was computed. The soil-control rows use the leases with matched soil measures, 2,184 leases on 37 reservations without Crow and 2,813 leases on 38 reservations with Crow. Appendix Table~\ref{tab:land_characteristics_sensitivity} reports the terrain-and-soil comparison on the 2,168-lease, 36-reservation common sample, which also requires complete terrain measures. The figure summarizes robustness and does not introduce a separate identification design.\par}
+{\footnotesize\noindent Notes: The figure reports two-stage least-squares coefficients on $1/\sqrt{s_{\max}}$ for log annual lease income per trust acre. Circles exclude Crow, and squares include Crow. Horizontal bars are Anderson--Rubin 95 percent confidence sets where available. Filled markers denote wild-cluster bootstrap $p<0.05$, open markers denote $p\geq0.05$, and the shaded band is the preferred-sample leave-one-reservation-out range. Bars are omitted where no Anderson--Rubin set was computed. The soil-control rows use the leases with matched soil measures, 6,059 leases on 42 reservations without Crow and 6,899 leases on 43 reservations with Crow. Appendix Table~\ref{tab:land_characteristics_sensitivity} reports the terrain-and-soil comparison on the 6,039-lease, 42-reservation common sample, which also requires complete terrain measures. The figure summarizes robustness and does not introduce a separate identification design.\par}
 \end{minipage}
 \end{figure}
 
@@ -602,9 +602,9 @@ The estimates come from agricultural leasing of allotted trust land, and Section
 \centering
 \label{tab:table4}
 \setlength\extrarowheight{-6pt}
-\estwide{table4.tex}{4}{c}
+\estwide{table4.tex}{3}{c}
 \parbox{1\textwidth}{\begin{spacing}{0.8}
-\small\noindent Notes: This table reports ordinary least-squares regressions of log annual lease income per trust acre on an indicator for the tribe being the largest owner of the tract. The sample includes agricultural leases of allotted trust land signed between 2006 and 2010. Columns 1 through 3 use the full constructed sample. Column 4 uses the multi-owner sample. All columns include reservation fixed effects and lease-signing year fixed effects. Lease controls are lease term, resource-type indicators, and log tract acreage. Standard errors appear in parentheses and cluster at the reservation level. Wild-cluster bootstrap $p$-values are reported in the table and use Rademacher weights by reservation with the null imposed.
+\small\noindent Notes: This table reports ordinary least-squares regressions of log annual lease income per trust acre on an indicator for the tribe being the largest owner of the tract. The sample is the preferred IV sample of 6,337 agricultural leases of allotted trust land on 44 reservations, signed between 2006 and 2010. All columns include reservation fixed effects and lease-signing year fixed effects. Column 2 adds the fee-simple share, and column 3 adds the lease controls, which are lease term, an indicator for a trust estate that also holds the minerals, and log tract acreage. Standard errors appear in parentheses and cluster at the reservation level. Wild-cluster bootstrap $p$-values are reported in the table and use Rademacher weights by reservation with the null imposed.
 \end{spacing}}
 \end{table}
 
@@ -613,9 +613,9 @@ The estimates come from agricultural leasing of allotted trust land, and Section
 \centering
 \label{tab:table8}
 \setlength\extrarowheight{-6pt}
-\estwide{tableDir.tex}{4}{c}
+\estwide{tableDir.tex}{3}{c}
 \parbox{1\textwidth}{\begin{spacing}{0.8}
-\small\noindent Notes: This table reports ordinary least-squares regressions of log annual lease income per trust acre on direct-payment measures. Direct payment is a proxy for owner involvement in the lease. Columns 1, 3, and 4 use the directly paid share, the fraction of lease income paid directly to landowners. Column 2 uses an indicator equal to one when any part of the lease income is paid directly. The sample includes agricultural leases of allotted trust land signed between 2006 and 2010. All specifications include reservation fixed effects, lease-signing year fixed effects, lease term, fee-simple share, and log tract acreage. Standard errors appear in parentheses and cluster at the reservation level. Wild-cluster bootstrap $p$-values are reported in the table and use Rademacher weights by reservation with the null imposed.
+\small\noindent Notes: This table reports ordinary least-squares regressions of log annual lease income per trust acre on direct-payment measures. Direct payment is a proxy for owner involvement in the lease. Columns 1 and 3 use the directly paid share, the fraction of lease income paid directly to landowners. Column 2 uses an indicator equal to one when any part of the lease income is paid directly. Columns 1 and 2 use the preferred IV sample with the direct-payment leases added back, 6,968 leases on 44 reservations, and column 3 adds the Crow Reservation, 7,904 leases on 45 reservations. All specifications include reservation fixed effects, lease-signing year fixed effects, lease term, fee-simple share, log tract acreage, and an indicator for a trust estate that also holds the minerals. Standard errors appear in parentheses and cluster at the reservation level. Wild-cluster bootstrap $p$-values are reported in the table and use Rademacher weights by reservation with the null imposed.
 \end{spacing}}
 \end{table}
 
@@ -625,7 +625,7 @@ The estimates come from agricultural leasing of allotted trust land, and Section
 \includegraphics[width=0.78\textwidth]{tribe_interest.png}
 \begin{minipage}{0.72\linewidth}
 \vspace{0.25em}
-\caption*{\small\noindent Notes: The unit of observation is a tract with an agricultural lease signed between 2006 and 2010, restricted to tracts with a positive tribal ownership share. Each point is the mean of log lease income per trust acre within a 0.05-wide bin of the tribal share, after partialling out reservation and lease-signing year fixed effects and the lease-level controls, with a vertical bar giving the 95 percent confidence interval for the bin mean. The solid line is a linear fit and the shaded region a 95 percent confidence band that is heteroskedasticity-robust. A binscatter linearity test does not reject linearity at conventional levels ($p=0.07$). $N=3,643$ across 40 reservations.}
+\caption*{\small\noindent Notes: The unit of observation is a tract with an agricultural lease in the preferred IV sample, signed between 2006 and 2010, restricted to tracts with a positive tribal ownership share. Each point is the mean of log lease income per trust acre within a 0.05-wide bin of the tribal share, after partialling out reservation and lease-signing year fixed effects and the lease-level controls, with a vertical bar giving the 95 percent confidence interval for the bin mean. The solid line is a linear fit and the shaded region a 95 percent confidence band that is heteroskedasticity-robust. A binscatter linearity test does not reject linearity at conventional levels ($p=0.11$). $N=2{,}896$ across 37 reservations.}
 \end{minipage}
 \end{figure}
 
@@ -635,7 +635,7 @@ The estimates come from agricultural leasing of allotted trust land, and Section
 \includegraphics[width=0.78\textwidth]{direct.png}
 \begin{minipage}{0.72\linewidth}
 \vspace{1mm}
-\caption*{\small\noindent Notes: The unit of observation is an agricultural lease signed between 2006 and 2010. Bars give the number of leases in each owner count category, shown separately for agency-pay leases and direct-payment leases, those with any part of the income paid directly to owners. $N=9{,}409$.}
+\caption*{\small\noindent Notes: The unit of observation is an agricultural lease in the preferred IV sample with the direct-payment leases added back, signed between 2006 and 2010. Bars give the number of leases in each owner count category, shown separately for agency-pay leases and direct-payment leases, those with any part of the income paid directly to owners. $N=6{,}968$.}
 \end{minipage}
 \end{figure}
 
@@ -820,14 +820,20 @@ Section~\ref{Econometrics} explains why the preferred IV sample excludes the Cro
 % The fragment file table_ssurgo_crowex.tex is retained in the repository and is not deleted.
 \input{table_land_characteristics_sensitivity.tex}
 
+\input{table_trust_estate.tex}
+
+\input{table_land_quality_ols.tex}
+
+\input{table_land_quality_sensitivity.tex}
+
 \begin{table}[H]
-\caption{Count-Based IV Robustness}
+\caption{IV Estimates with Owner-Count Measures}
 \label{tab:count_iv_robustness}
 \small
 \setlength\extrarowheight{-6pt}
 \estwide{table_count_iv_robustness.tex}{6}{c}
 \parbox{1\textwidth}{\begin{spacing}{0.8}
-\small\noindent Notes: Each row reports a separate two-stage least-squares regression of log lease income per trust acre on the listed ownership measure. The instruments are the earliest and latest qualifying probate orders approved no later than the lease effective date. The $\sqrt{\text{owners}}$ row uses the owner-count form implied by equation~\eqref{(5)} under equal shares. Log(number of owners) is the natural logarithm of the tract owner count. The effective number of owners is $1/\text{HHI}$, with the ownership Herfindahl index measured on the zero-to-one scale. All specifications include reservation fixed effects, lease-signing year fixed effects, lease term, fee-simple share, and log tract acreage. Standard errors cluster by reservation. Wild-cluster bootstrap $p$-values use WRE-N with 99,999 replications. Anderson-Rubin intervals are weak-instrument-robust 95 percent confidence sets. These are robustness specifications, not the preferred model-implied measure. For the log rows, doubling the measure changes log income by $\hat\beta\log 2$.
+\small\noindent Notes: Each row reports a separate two-stage least-squares regression of log lease income per trust acre on the listed ownership measure. The instruments are the earliest and latest qualifying probate orders approved no later than the lease effective date. The $\sqrt{\text{owners}}$ row uses the owner-count form implied by equation~\eqref{(5)} under equal shares. Log(number of owners) is the natural logarithm of the tract owner count. The effective number of owners is $1/\text{HHI}$, with the ownership Herfindahl index measured on the zero-to-one scale. All specifications include reservation fixed effects, lease-signing year fixed effects, lease term, fee-simple share, log tract acreage, and an indicator for a trust estate that also holds the minerals. Standard errors cluster by reservation. Wild-cluster bootstrap $p$-values use WRE-N with 99,999 replications. Anderson-Rubin intervals are weak-instrument-robust 95 percent confidence sets. These are robustness specifications, not the preferred model-implied measure. For the log rows, doubling the measure changes log income by $\hat\beta\log 2$.
 \end{spacing}}
 \normalsize
 \end{table}
@@ -839,7 +845,7 @@ Section~\ref{Econometrics} explains why the preferred IV sample excludes the Cro
 \setlength\extrarowheight{-6pt}
 \input{table_instrument_timing.tex}
 \parbox{1\textwidth}{\begin{spacing}{0.8}
-\small\noindent Notes: This table reports two-stage least-squares estimates for alternative instrument constructions in the Crow-excluded IV sample. Panel A reports the three two-instrument constructions. Panel B reports the earliest-only just-identified construction and the strict prior-year construction. The main construction uses the earliest and latest probate orders approved no later than the lease effective date. The year-level construction uses probate-order years no later than the lease year. The latest-through-2010 construction uses the earliest qualifying probate order together with the latest probate order recorded through 2010, which is not restricted to orders approved no later than the lease effective date. The earliest-only construction is just identified. The strict prior-year construction discards same-year orders. All specifications include reservation fixed effects, lease-signing year fixed effects, lease term, fee-simple share, and log tract acreage. Standard errors appear in parentheses and cluster at the reservation level. Wild-cluster bootstrap $p$-values use 99,999 replications. Anderson-Rubin intervals are weak-instrument-robust 95 percent confidence sets. Over-identification tests do not establish instrument validity.
+\small\noindent Notes: This table reports two-stage least-squares estimates for alternative instrument constructions in the Crow-excluded IV sample. Panel A reports the three two-instrument constructions. Panel B reports the earliest-only just-identified construction and the strict prior-year construction. The main construction uses the earliest and latest probate orders approved no later than the lease effective date. The year-level construction uses probate-order years no later than the lease year. The latest-through-2010 construction uses the earliest qualifying probate order together with the latest probate order recorded through 2010, which is not restricted to orders approved no later than the lease effective date. The earliest-only construction is just identified. The strict prior-year construction discards same-year orders. All specifications include reservation fixed effects, lease-signing year fixed effects, lease term, fee-simple share, log tract acreage, and an indicator for a trust estate that also holds the minerals. Standard errors appear in parentheses and cluster at the reservation level. Wild-cluster bootstrap $p$-values use 99,999 replications. Anderson-Rubin intervals are weak-instrument-robust 95 percent confidence sets. Over-identification tests do not establish instrument validity.
 \end{spacing}}
 \normalsize
 \end{table}
@@ -853,7 +859,7 @@ Section~\ref{Econometrics} explains why the preferred IV sample excludes the Cro
 \setlength\extrarowheight{-6pt}
 \estfit{table_iv_outlier_appendix_nocrow.tex}{7}{c}
 \parbox{1\textwidth}{\begin{spacing}{0.8}
-\small\noindent Notes: The table reports the preferred two-stage least-squares specification after rebuilding the sample under alternative treatments of extreme income per trust acre. The baseline drops observations outside the first and ninety-ninth percentiles. The no-trim row keeps the full positive-income sample. The final row applies the pre-specified restriction to tracts with at least one trust acre. All specifications exclude the Crow Reservation and include reservation fixed effects, lease-signing year fixed effects, lease term, fee-simple share, and log tract acreage. Standard errors appear in parentheses and cluster at the reservation level. Wild-cluster bootstrap $p$-values use 99,999 replications. Anderson-Rubin intervals are weak-instrument-robust 95 percent confidence sets.
+\small\noindent Notes: The table reports the preferred two-stage least-squares specification after rebuilding the sample under alternative treatments of extreme income per trust acre. The baseline drops observations outside the first and ninety-ninth percentiles. The no-trim row keeps the full positive-income sample. The final row applies the pre-specified restriction to tracts with at least one trust acre. All specifications exclude the Crow Reservation and include reservation fixed effects, lease-signing year fixed effects, lease term, fee-simple share, log tract acreage, and an indicator for a trust estate that also holds the minerals. Standard errors appear in parentheses and cluster at the reservation level. Wild-cluster bootstrap $p$-values use 99,999 replications. Anderson-Rubin intervals are weak-instrument-robust 95 percent confidence sets.
 \end{spacing}}
 \normalsize
 \end{table}
@@ -864,6 +870,8 @@ Section~\ref{Econometrics} explains why the preferred IV sample excludes the Cro
 
 \input{table_divided_attention_placebo.tex}
 
+\input{table_majority_threshold.tex}
+
 \subsection*{Monitoring Costs and Owner Involvement}
 
 \begin{table}[H]
@@ -873,12 +881,11 @@ Section~\ref{Econometrics} explains why the preferred IV sample excludes the Cro
 \scriptsize
 \setlength\extrarowheight{-6pt}
 \estfit{table5.tex}{6}{c}
-\setlength\extrarowheight{-6pt}
-\estfit{tableB5short.tex}{6}{c}
+% One panel on the IV sample since the rewrite of November 2026; tableB5short.tex (the former multi-owner panel) is no longer included and is kept in the repository.
 \vspace{-1mm}
 \parbox{1\textwidth}{
 \begin{spacing}{0.8}
-\small\noindent Notes: The outcome is the log of annual lease income per trust acre. Columns 1 to 3 enter the tribal ownership share alone under progressively richer controls. Columns 4 to 6 add an indicator for the tribe being the largest owner and its interaction with the tribal share. Standard errors clustered at the reservation level appear in parentheses, and wild-cluster bootstrap p-values appear in square brackets. Data in Panel B exclude leases with one owner. The specifications in Panel B include the same controls as in Panel A.
+\small\noindent Notes: The outcome is the log of annual lease income per trust acre, and the sample is the preferred IV sample of 6,337 leases on 44 reservations. Columns 1 to 3 enter the tribal ownership share alone under progressively richer controls. Columns 4 to 6 add an indicator for the tribe being the largest owner and its interaction with the tribal share. Standard errors clustered at the reservation level appear in parentheses, and wild-cluster bootstrap $p$-values appear in square brackets.
 \end{spacing}
 }
 \normalsize
@@ -905,9 +912,9 @@ Two further tables examine the tribal-ownership association under alternative co
 \caption{Fee-Simple Share and Lease Income per Trust Acre}
 \label{tab:fee_simple_appendix}
 \setlength\extrarowheight{-6pt}
-\estwide{table_fee_simple_appendix.tex}{4}{c}
+\estwide{table_fee_simple_appendix.tex}{3}{c}
 \parbox{1\textwidth}{\begin{spacing}{0.8}
-\small\noindent Notes: Each column reports an ordinary least-squares regression of log lease income per trust acre on the fee-simple share of the tract. Columns 1 through 3 use the full sample of agricultural leases of allotted trust land, 2006 to 2010. Column 4 restricts to the multi-owner sample. All specifications include reservation and lease-signing year fixed effects. Column 2 adds lease controls. Column 3 adds the main ownership concentration measure, $1/\sqrt{s_{\max}}$. Column 4 repeats column 3 on the multi-owner sample. Standard errors appear in parentheses and cluster at the reservation level. Wild-cluster bootstrap $p$-values use Rademacher weights by reservation with the null imposed.
+\small\noindent Notes: Each column reports an ordinary least-squares regression of log lease income per trust acre on the fee-simple share of the tract. All columns use the preferred IV sample of 6,337 agricultural leases of allotted trust land on 44 reservations, 2006 to 2010. All specifications include reservation and lease-signing year fixed effects. Column 2 adds the lease controls, which are lease term, an indicator for a trust estate that also holds the minerals, and log tract acreage. Column 3 adds the main ownership concentration measure, $1/\sqrt{s_{\max}}$. Standard errors appear in parentheses and cluster at the reservation level. Wild-cluster bootstrap $p$-values use Rademacher weights by reservation with the null imposed.
 \end{spacing}}
 \end{table}
 

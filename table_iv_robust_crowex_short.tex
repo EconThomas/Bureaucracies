@@ -1,41 +1,28 @@
-% table_iv_robust_crowex_short.tex (Table 5) --- IV robustness battery, two panels
-% (Panel A Crow-excluded baseline, Panel B Crow-included comparison).
+% table_iv_robust_crowex_short.tex --- IV robustness, two panels (Table 5)
+% Written by manuscript_rewrite_20261121/code/make_exhibits.py on the branch work/rewrite-expanded-20261121 (step 2 of the rewrite).
+% Every printed number is asserted against its source; log: manuscript_rewrite_20261121/exhibits_check_log.csv.
+% Source: results_pass_outputs_expanded_sample/csv/task3_robustness.csv; baseline rows from task2_main_iv.csv
 % include via: \estwide{table_iv_robust_crowex_short.tex}{4}{c}
-% Round 2 (2026-09-27, Olga C45): N column added from the micropatch values CSV (ex_n / in_n)
-% by analysis_2026/revision_round2_20260927/code/add_n_table5.py; all other cells verified unchanged.
-% Each row reports the 2SLS estimate of the effect of ownership fractionation on log annual
-% lease income per trust acre under the indicated change, for agency-administered, multi-owner,
-% surface-resource-only agricultural leases of allotted trust land, 2006--2010. The endogenous
-% regressor is one over the square root of the largest owner's share, instrumented by the
-% earliest and latest qualifying probate orders (orders approved no later than the lease
-% effective date), except where a row names an alternative concentration measure. All
-% specifications include reservation fixed effects and lease-signing year fixed effects and
-% control for the lease term, the fee-simple share, and log tract acreage. CRV1 standard errors
-% clustered by reservation are in parentheses; the wild-cluster bootstrap p-value (WRE-N, null
-% imposed, Rademacher, B = 99,999) and the Anderson--Rubin 95\% confidence set are reported for
-% each estimate. Panel A (Crow excluded) covers 38 reservations and Panel B (Crow included) 39.
-% Income is in 2010 dollars per trust acre. These are causal (instrumental-variable)
-% estimates under the stated exclusion restriction.
  & Coefficient (SE) & WB $p$ & AR 95\% & $N$ \\
 \midrule
 \multicolumn{5}{l}{\textit{Panel A. Crow excluded}} \\
 \addlinespace[0.25em]
-Baseline, qualifying probate orders $\geq$ 1938 & $-$0.234 (0.070) & 0.020 & [-0.415, -0.066] & 2,211 \\
-No probate-date eligibility cutoff & $-$0.235 (0.062) & 0.012 & [-0.383, -0.085] & 2,341 \\
-Including probate modifications & $-$0.228 (0.056) & 0.005 & [-0.361, -0.095] & 2,246 \\
-Reservation-by-allotment-decade fixed effects & $-$0.191 (0.095) & 0.140 & -- & 2,162 \\
-Top five owners' cumulative share & 0.440 (0.136) & 0.020 & [0.121, 0.785] & 2,211 \\
-Ownership Herfindahl index & 0.547 (0.177) & 0.034 & [0.151, 1.017] & 2,211 \\
-Direct-payment leases retained & $-$0.232 (0.060) & 0.010 & [-0.384, -0.092] & 2,394 \\
-No trimming & $-$0.227 (0.065) & 0.016 & [-0.385, -0.065] & 2,284 \\
+Baseline, qualifying probate orders $\geq$ 1938 & $-$0.139 (0.050) & 0.019 & [-0.242, -0.020] & 6,337 \\
+No probate-date eligibility cutoff & $-$0.138 (0.049) & 0.013 & [-0.245, -0.019] & 6,674 \\
+Including probate modifications & $-$0.141 (0.050) & 0.016 & [-0.206, -0.051] & 6,443 \\
+\shortstack[l]{Reservation $\times$ decade of earliest\\conveyance fixed effects} & $-$0.076 (0.054) & 0.187 & [-0.151, 0.057] & 6,301 \\
+Top five owners' cumulative share & 0.246 (0.088) & 0.021 & [0.033, 0.444] & 6,337 \\
+Ownership Herfindahl index & 0.332 (0.123) & 0.023 & [0.046, 0.586] & 6,337 \\
+Direct-payment leases retained & $-$0.164 (0.051) & 0.011 & [-0.262, -0.047] & 6,968 \\
+No trimming & $-$0.123 (0.050) & 0.031 & [-0.236, -0.021] & 6,499 \\
 \addlinespace[0.45em]
 \multicolumn{5}{l}{\textit{Panel B. Crow included}} \\
 \addlinespace[0.25em]
-Baseline, qualifying probate orders $\geq$ 1938 & $-$0.176 (0.073) & 0.048 & [-0.344, 0.016] & 2,848 \\
-No probate-date eligibility cutoff & $-$0.157 (0.081) & 0.130 & [-0.339, 0.019] & 3,006 \\
-Including probate modifications & $-$0.181 (0.060) & 0.008 & [-0.315, -0.026] & 2,887 \\
-Reservation-by-allotment-decade fixed effects & $-$0.159 (0.081) & 0.102 & [-0.187, 0.038] & 2,799 \\
-Top five owners' cumulative share & 0.315 (0.143) & 0.070 & [-0.028, 0.639] & 2,848 \\
-Ownership Herfindahl index & 0.406 (0.188) & 0.073 & [-0.032, 0.890] & 2,848 \\
-Direct-payment leases retained & $-$0.170 (0.071) & 0.050 & [-0.333, 0.021] & 3,091 \\
-No trimming & $-$0.169 (0.076) & 0.065 & [-0.339, 0.039] & 2,923 \\
+Baseline, qualifying probate orders $\geq$ 1938 & $-$0.097 (0.055) & 0.107 & [-0.212, 0.040] & 7,188 \\
+No probate-date eligibility cutoff & $-$0.092 (0.057) & 0.143 & [-0.219, 0.046] & 7,570 \\
+Including probate modifications & $-$0.103 (0.053) & 0.076 & [-0.186, 0.024] & 7,297 \\
+\shortstack[l]{Reservation $\times$ decade of earliest\\conveyance fixed effects} & $-$0.060 (0.050) & 0.247 & [-0.137, 0.071] & 7,152 \\
+Top five owners' cumulative share & 0.170 (0.098) & 0.117 & [-0.067, 0.390] & 7,188 \\
+Ownership Herfindahl index & 0.234 (0.134) & 0.112 & [-0.095, 0.520] & 7,188 \\
+Direct-payment leases retained & $-$0.120 (0.057) & 0.064 & [-0.233, 0.022] & 7,904 \\
+No trimming & $-$0.084 (0.055) & 0.160 & [-0.208, 0.054] & 7,352 \\

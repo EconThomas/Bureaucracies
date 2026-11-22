@@ -1,0 +1,41 @@
+% table_leasing_facts.tex --- Lease terms and rent setting in the lease records (procedures appendix, decision 6; not yet input in main.tex)
+% Written by manuscript_rewrite_20261121/code/make_exhibits.py on the branch work/rewrite-expanded-20261121 (step 2 of the rewrite).
+% Every printed number is asserted against its source; log: manuscript_rewrite_20261121/exhibits_check_log.csv.
+% Source: manuscript_rewrite_20261121/runs/lease_facts/B1_term_distribution_by_frame.csv and B3_rent_schedule_tests_by_frame_pay.csv (X3 = preferred IV sample, S1 = constructed sample)
+% Source: research_notes/BIA agricultural leasing institutions/B2_*.csv (Panel C, FY2008 ledger, unchanged)
+% include via: \input{table_leasing_facts.tex} (with the procedures appendix, batch T2 or T6)
+\begin{table}[H]
+\centering
+\caption{Lease Terms and Rent Setting in the Lease Records}
+\label{tab:leasing_facts}
+\footnotesize
+\begin{tabular}{lcc}
+\toprule
+ & Preferred IV sample & Constructed sample \\
+\midrule
+\multicolumn{3}{l}{\textit{Panel A. Lease term (share of leases)}} \\
+Three years & 0.083 & 0.074 \\
+Four years & 0.014 & 0.014 \\
+Five years & 0.846 & 0.860 \\
+Ten years & 0.039 & 0.031 \\
+Five years or less & 0.956 & 0.964 \\
+Ends the day before an anniversary of its start & 0.983 & 0.983 \\
+Leases & 6,337 & 9,409 \\
+\addlinespace
+\multicolumn{3}{l}{\textit{Panel B. Rent per trust acre within reservation and signing year}} \\
+Pairs of leases with identical rent, to the cent (\%) & 0.66 & 0.85 \\
+Pairs of leases with identical rent, \$0.50 grid (\%) & 2.67 & 3.49 \\
+Leases at the cell's most common rent (\%) & 6.8 & 6.7 \\
+$R^2$ of reservation-by-year cells, log rent & 0.46 & 0.46 \\
+Leases & 6,337 & 8,454 \\
+\addlinespace
+\multicolumn{3}{l}{\textit{Panel C. Rent within and across leases, all agricultural leases}} \\
+Same lease: FY2008 bill equals 2010 rent ($\pm$1\%) & \multicolumn{2}{c}{0.850 (6,070 leases)} \\
+Re-let tract: new rent equals old rent ($\pm$1\%) & \multicolumn{2}{c}{0.047 (915 leases)} \\
+\quad Successor rent higher; lower & \multicolumn{2}{c}{0.873; 0.080} \\
+\quad Median new-to-old ratio (25th, 75th pct.) & \multicolumn{2}{c}{1.59 (1.20, 2.30)} \\
+\quad SD of log ratio within agency and year & \multicolumn{2}{c}{0.66 (896 leases, 17 cells)} \\
+\bottomrule
+\end{tabular}
+\parbox{1\textwidth}{\begin{spacing}{0.8}\small\noindent Notes: Descriptive statistics from the TAAMS extract. Term is the expiration date minus the effective date, in years, rounded. Panel B uses agency-pay leases. A pair is two leases in the same reservation and signing year, and a single schedule rate per cell would give a share near 100 percent. Panel C uses the audited FY2008 BIA payment ledger. Its first row covers agricultural leases in force throughout fiscal year 2008 with one annual invoice. The other rows link a lease in force in 2010 to an expired predecessor with the same lease-number base and land area, almost all in the Great Plains region. The ratio combines market growth between the two leases with re-pricing, and the ledger does not record acreage.\end{spacing}}
+\end{table}
