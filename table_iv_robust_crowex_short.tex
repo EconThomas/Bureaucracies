@@ -1,12 +1,10 @@
-% table_iv_robust_crowex_short.tex --- IV robustness, two panels (Table 5)
-% Written by manuscript_rewrite_20261121/code/make_exhibits.py on the branch work/rewrite-expanded-20261121 (step 2 of the rewrite).
+% table_iv_robust_crowex_short.tex --- IV robustness, Crow excluded (Table 5)
+% Written by manuscript_rewrite_20261121/code/make_exhibits.py on the branch work/crow-reporting-20261122 (Crow reporting batch, November 22, 2026).
 % Every printed number is asserted against its source; log: manuscript_rewrite_20261121/exhibits_check_log.csv.
 % Source: results_pass_outputs_expanded_sample/csv/task3_robustness.csv; baseline rows from task2_main_iv.csv
 % include via: \estwide{table_iv_robust_crowex_short.tex}{4}{c}
  & Coefficient (SE) & WB $p$ & AR 95\% & $N$ \\
 \midrule
-\multicolumn{5}{l}{\textit{Panel A. Crow excluded}} \\
-\addlinespace[0.25em]
 Baseline, qualifying probate orders $\geq$ 1938 & $-$0.139 (0.050) & 0.019 & [-0.242, -0.020] & 6,337 \\
 No probate-date eligibility cutoff & $-$0.138 (0.049) & 0.013 & [-0.245, -0.019] & 6,674 \\
 Including probate modifications & $-$0.141 (0.050) & 0.016 & [-0.206, -0.051] & 6,443 \\
@@ -15,14 +13,3 @@ Top five owners' cumulative share & 0.246 (0.088) & 0.021 & [0.033, 0.444] & 6,3
 Ownership Herfindahl index & 0.332 (0.123) & 0.023 & [0.046, 0.586] & 6,337 \\
 Direct-payment leases retained & $-$0.164 (0.051) & 0.011 & [-0.262, -0.047] & 6,968 \\
 No trimming & $-$0.123 (0.050) & 0.031 & [-0.236, -0.021] & 6,499 \\
-\addlinespace[0.45em]
-\multicolumn{5}{l}{\textit{Panel B. Crow included}} \\
-\addlinespace[0.25em]
-Baseline, qualifying probate orders $\geq$ 1938 & $-$0.097 (0.055) & 0.107 & [-0.212, 0.040] & 7,188 \\
-No probate-date eligibility cutoff & $-$0.092 (0.057) & 0.143 & [-0.219, 0.046] & 7,570 \\
-Including probate modifications & $-$0.103 (0.053) & 0.076 & [-0.186, 0.024] & 7,297 \\
-\shortstack[l]{Reservation $\times$ decade of earliest\\conveyance fixed effects} & $-$0.060 (0.050) & 0.247 & [-0.137, 0.071] & 7,152 \\
-Top five owners' cumulative share & 0.170 (0.098) & 0.117 & [-0.067, 0.390] & 7,188 \\
-Ownership Herfindahl index & 0.234 (0.134) & 0.112 & [-0.095, 0.520] & 7,188 \\
-Direct-payment leases retained & $-$0.120 (0.057) & 0.064 & [-0.233, 0.022] & 7,904 \\
-No trimming & $-$0.084 (0.055) & 0.160 & [-0.208, 0.054] & 7,352 \\

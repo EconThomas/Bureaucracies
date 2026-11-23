@@ -1,30 +1,21 @@
-% table_calibration_crowex.tex --- Calibration of the monitoring model (two-column portrait).
-% include via:  \estwide{table_calibration_crowex.tex}{2}{c}
-% Notes: This table reports the model-based calibration from the levels regression of lease income
-% per trust acre on $1/\sqrt{s_{\max}}$, estimated without controls or fixed effects. The preferred
-% calibration excludes the Crow Reservation for consistency with the preferred IV sample; the
-% Crow-included column is reported for comparison. The competitive ceiling $R_l$ is the regression
-% intercept and is corroborated by mean income per trust acre on single-owner independently
-% negotiated leases. The responsiveness parameter is $\gamma=\beta_1^2/R_l$. Constrained efficient
-% monitoring $M^{*}$ follows equation~(2), actual monitoring $M$ at the mean largest-owner share
-% follows equation~(8), and the output gap follows equation~(10); these formulas are given in
-% Section~9. Dollars are 2010 dollars per trust acre unless stated as per lease-year. The
-% calibration is descriptive and is not the causal IV estimate.
- & Crow excluded & Crow included \\
-\midrule
-\multicolumn{3}{@{}l}{\emph{Competitive ceiling and model parameters}} \\
-Competitive ceiling $R_l$ (regression intercept) & 25.44 & 24.76 \\
-\quad Standard error of the intercept & (3.51) & (3.37) \\
-Competitive ceiling, single-owner independently negotiated leases & 25.73 & 25.73 \\
-Slope on $1/\sqrt{s_{\max}}$ & $-$1.22 & $-$1.63 \\
-Responsiveness parameter $\gamma$ & 0.058 & 0.107 \\
-Mean largest owner's share & 0.41 & 0.40 \\
+% table_calibration_crowex.tex --- Calibration inputs and implied monitoring gap, broad calibration sample without Crow (Table 8)
+% Written by manuscript_rewrite_20261121/code/make_exhibits.py on the branch work/crow-reporting-20261122 (Crow reporting batch, November 22, 2026).
+% Every printed number is asserted against its source; log: manuscript_rewrite_20261121/exhibits_check_log.csv.
+% Source: results_pass_outputs_micropatch/csv/table_calibration_crowex_values.csv, row crow_excluded (written by results_pass_outputs_micropatch/code/mp_task5.py)
+% include via: \estinput{table_calibration_crowex.tex}, inside the tabular* of Table 8 in main.tex
+\multicolumn{2}{@{}l}{\emph{Competitive ceiling and model parameters}} \\
+Competitive ceiling $R_l$ (regression intercept) & 25.44 \\
+\quad Standard error of the intercept & (3.51) \\
+Competitive ceiling, single-owner independently negotiated leases & 25.73 \\
+Slope on $1/\sqrt{s_{\max}}$ & $-$1.22 \\
+Responsiveness parameter $\gamma$ & 0.058 \\
+Mean largest owner's share & 0.41 \\
 \addlinespace
-\multicolumn{3}{@{}l}{\emph{Monitoring and output gap}} \\
-Constrained efficient monitoring $M^{*}$ (\$ per trust acre) & 1.16 & 1.52 \\
-Cost at constrained efficient benchmark (\$ per lease-year) & 141 & 201 \\
-Actual monitoring $M$ at the mean share (\$ per trust acre) & 0.72 & 0.92 \\
-Actual monitoring relative to constrained efficient benchmark, $M/M^{*}$ & 0.618 & 0.605 \\
-Output gap at the mean share (\$ per trust acre) & 0.69 & 0.95 \\
-Output gap (percent of lease income) & 3.0 & 4.4 \\
-Output gap (\$ per lease-year) & 85 & 126 \\
+\multicolumn{2}{@{}l}{\emph{Monitoring and output gap}} \\
+Constrained efficient monitoring $M^{*}$ (\$ per trust acre) & 1.16 \\
+Cost at constrained efficient benchmark (\$ per lease-year) & 141 \\
+Actual monitoring $M$ at the mean share (\$ per trust acre) & 0.72 \\
+Actual monitoring relative to constrained efficient benchmark, $M/M^{*}$ & 0.618 \\
+Output gap at the mean share (\$ per trust acre) & 0.69 \\
+Output gap (percent of lease income) & 3.0 \\
+Output gap (\$ per lease-year) & 85 \\

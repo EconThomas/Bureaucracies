@@ -1,0 +1,30 @@
+% table_crow_included.tex --- IV estimates including the Crow Reservation (new appendix table, Crow reporting batch)
+% Written by manuscript_rewrite_20261121/code/make_exhibits.py on the branch work/crow-reporting-20261122 (Crow reporting batch, November 22, 2026).
+% Every printed number is asserted against its source; log: manuscript_rewrite_20261121/exhibits_check_log.csv.
+% Source: results_pass_outputs_expanded_sample/csv/task2_main_iv.csv (row maxshare_one_sqrt, Crow included)
+% Source: results_pass_outputs_expanded_sample/csv/task10_clr.csv (tag t4_main_in_X)
+% Source: results_pass_outputs_expanded_sample/csv/task5_soil_rows.csv (role estimate, Crow included, row +ALL_soil)
+% include via: \input{table_crow_included.tex} (in the IV-diagnostics group of Appendix A)
+\begin{table}[H]
+\caption{IV Estimates Including the Crow Reservation}
+\label{tab:crow_included}
+\setlength\extrarowheight{-6pt}
+\vspace{.75ex}
+\begin{tabular*}{\textwidth}{@{\hskip\tabcolsep\extracolsep\fill}lcc}
+\toprule
+ & Without land controls & With four soil measures \\
+\midrule
+$1/\sqrt{s_{\max}}$ & $-$0.0971 & $-$0.0798 \\
+ & (0.0549) & (0.0380) \\[0.3ex]
+Wild-cluster bootstrap $p$ & 0.107 & 0.047 \\
+Anderson--Rubin 95\% set & [-0.212, 0.040] & [-0.186, -0.004] \\
+Conditional likelihood ratio 95\% set & [-0.224, 0.018] & \\
+Effective $F$ & 117.4 & \\
+\midrule
+Observations & 7,188 & 6,899 \\
+Reservations & 45 & 43 \\
+\bottomrule
+\addlinespace[.75ex]
+\end{tabular*}
+\parbox{1\textwidth}{\begin{spacing}{0.8}\small\noindent Notes: Two-stage least-squares regressions of log lease income per trust acre on $1/\sqrt{s_{\max}}$ in the preferred IV sample with the leases of the Crow Reservation added, with the instruments, controls, and fixed effects of Table~\ref{tab:table_iv_main}. The second column adds the soil battery of Appendix Table~\ref{tab:land_characteristics_sensitivity} and keeps the leases with complete soil data. Standard errors cluster by reservation, wild-cluster bootstrap $p$-values use 99,999 replications, and the Anderson--Rubin and conditional likelihood ratio sets are weak-instrument-robust 95 percent sets. The conditional likelihood ratio set and the effective $F$-statistic are reported for the first column only.\end{spacing}}
+\end{table}

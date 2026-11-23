@@ -30,17 +30,18 @@ The paper compiles with pdfLaTeX and BibTeX (style `apalike`), on Overleaf or lo
   - Table A5, `table_trust_estate.tex`
   - Table A6, `table_land_quality_ols.tex`
   - Table A7, `table_count_iv_robustness.tex`
-  - Table A8, `table_instrument_timing.tex`
-  - Table A9, `table_land_quality_sensitivity.tex`
-  - Table A10, `table_iv_additional_diagnostics.tex`
-  - Table A11, `table_iv_outlier_appendix_nocrow.tex`
-  - Table A12, `table_mechanism_owner_count.tex`
-  - Table A13, `table_divided_attention_placebo.tex`
-  - Table A14, `table_majority_threshold.tex`
-  - Table A15, `table5.tex`
-  - Table A16, `play_tribe_dum.tex`
-  - Table A17, `play_tribe4.tex`
-  - Table A18, `table_fee_simple_appendix.tex`
+  - Table A8, `table_crow_included.tex`
+  - Table A9, `table_instrument_timing.tex`
+  - Table A10, `table_land_quality_sensitivity.tex`
+  - Table A11, `table_iv_additional_diagnostics.tex`
+  - Table A12, `table_iv_outlier_appendix_nocrow.tex`
+  - Table A13, `table_mechanism_owner_count.tex`
+  - Table A14, `table_divided_attention_placebo.tex`
+  - Table A15, `table_majority_threshold.tex`
+  - Table A16, `table5.tex`
+  - Table A17, `play_tribe_dum.tex`
+  - Table A18, `play_tribe4.tex`
+  - Table A19, `table_fee_simple_appendix.tex`
 - Figures in the text:
   - Figure 1, `fig_instrument_schematic.pdf`
   - Figure 2, `fig_iv_dag.tex` (TikZ)
